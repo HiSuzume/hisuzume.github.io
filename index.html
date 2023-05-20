@@ -26,7 +26,7 @@
     </head>
     <!-- 如果class添加了mdui-locked，
       那么将只能在打开抽屉后才能解锁滑动，
-      坑死人了，不得使用 -->
+      不明用途抄代码害人不浅啊 -->
     <body
         class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-teal mdui-loaded">
         <style>
@@ -55,14 +55,6 @@ a:visited {text-decoration:none;}
     margin: 20px 20px 20px 20px;
 }
 
-.card-center {
-	margin-left:15%;
-	margin-right:15%;
-	margin-top: 30px;
-	max-width: 100%;
-	max-height: 60%;
-}
-
 hide {
     color: transparent;
     text-shadow:2px 2px 12px #000000;
@@ -76,6 +68,46 @@ hide:hover {
 .content {
 	margin-left:5%;
 	margin-right:5%;
+}
+
+/*图片 & 文章卡片 响应式*/
+@media only screen and (min-width: 0px) {
+    .img {
+        max-width:25%;
+    }
+    .card-center {
+	    margin-left:15%;
+	    margin-right:15%;
+	    margin-top: 30px;
+	    max-width: 100%;
+	    max-height: 60%;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .img {
+        max-width:15%;
+    }
+    .card-center {
+	    margin-left:23%;
+	    margin-right:23%;
+	    margin-top: 30px;
+	    max-width: 100%;
+	    max-height: 60%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .img {
+        max-width:10%;
+    }
+    .card-center {
+	    margin-left:30%;
+	    margin-right:30%;
+	    margin-top: 30px;
+	    max-width: 100%;
+	    max-height: 60%;
+    }
 }
 </style>
         <div>
@@ -186,7 +218,8 @@ hide:hover {
                 <div style="text-align:center;">
                     <img
                         src="suzume.png"
-                        style="max-width:25%;border-radius:200px 200px 200px 200px;"
+                        class="img"
+                        style="border-radius:200px 200px 200px 200px;"
                         alt="当图片存在时，一张铃芽的图片就会显示出来" />
                 </div>
                 <br />
