@@ -22,11 +22,28 @@
         <link
             rel="stylesheet"
             href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
-        <title>铃芽 | 黎明，终会到来</title>
+        <title>铃芽 | 黎明 终会到来</title>
     </head>
+    <!-- 如果class添加了mdui-locked，
+      那么将只能在打开抽屉后才能解锁滑动，
+      坑死人了，不得使用 -->
     <body
-        class="mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-teal mdui-loaded mdui-locked">
+        class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-teal mdui-loaded">
         <style>
+/* 
+ * 为了使页面更加赏心悦目，用了自定义字体
+ * 只不过可能部分用户会导致网页加载很久
+ */
+
+@font-face {
+    font-family: 'myfont';
+    src:url('https://cdn.jsdelivr.net/gh/HiSuzume/hisuzume/font.ttf');
+}
+
+* {
+    font-family: 'myfont';
+}
+
 .wen-circle {
     border-radius:20px 20px 20px 20px;
 }
@@ -56,40 +73,63 @@ hide:hover {
     text-shadow:0px 0px 3px #000000;
 }
 
-/* 
- * 为了使页面更加赏心悦目，用CDN加载了字体
- * 当然CDN是其他大佬提供的，任意仓库都能用
- * 只不过可能部分用户会导致网页加载很久
- */
-
-@font-face {
-    font-family: 'myfont';
-    src:url('https://cdn.jsdelivr.net/gh/HiSuzume/hisuzume/font.ttf');
-}
-
-* {
-    font-family: 'myfont';
-}
-
-body {
-    overflow: visible;
-}
-
 .content {
-	margin-left:3%;
-	margin-right:3%;
+	margin-left:5%;
+	margin-right:5%;
 }
 </style>
         <div>
-
-            <!-- 侧滑栏 -->
+            <!-- MDUI 标题栏 -->
+            <div class="mdui-appbar mdui-appbar-fixed">
+                <div class="mdui-toolbar mdui-color-theme">
+                    <a
+                        mdui-drawer="{target: '#drawer'}"
+                        mdui-tooltip="{content: '侧边栏'}"
+                        class="mdui-btn mdui-btn-icon">
+                        <i class="mdui-icon material-icons">menu</i>
+                    </a>
+                    <span class="mdui-typo-title">铃芽</span>
+                    <div class="mdui-toolbar-spacer">
+                    </div>
+                    <a
+                        onclick="document.location.reload()"
+                        mdui-tooltip="{content: '刷新'}"
+                        class="mdui-btn mdui-btn-icon mdui-ripple">
+                        <i class="mdui-icon material-icons">refresh</i>
+                    </a>
+                </div>
+            </div>
+            <!-- 应用抽屉 -->
             <div
-                class="mdui-drawer mdui-drawer-close"
+                class="mdui-drawer"
                 id="drawer">
                 <div
                     class="mdui-list"
                     mdui-collapse="{accordion: true}"
                     style="margin-bottom: 76px;">
+                    <div class="mdui-collapse-item">
+                        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                            <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme">link</i>
+                            <div class="mdui-list-item-content">友情链接</div>
+                            <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                        </div>
+                        <ul class="mdui-collapse-item-body mdui-list">
+                            <li class="mdui-list-item mdui-ripple" mdui-tooltip="{content: '没写完'}">
+                                <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                                <a
+                                    class="mdui-list-item-content"
+                                    >
+                                    <del>铃芽 Chat</del>
+                                </a>
+                            </li>
+                            <li class="mdui-list-item mdui-ripple">
+                                <i class="mdui-list-item-icon mdui-icon material-icons">note</i>
+                                <a
+                                    class="mdui-list-item-content"
+                                    href="https://chenfengblog.eu.org/">辰风の博客</a>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="mdui-collapse-item">
                         <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
                             <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme">explore</i>
@@ -134,24 +174,6 @@ body {
                     </div>
                 </div>
             </div>
-            <!-- MDUI 标题栏 -->
-            <div class="mdui-appbar mdui-appbar-fixed">
-                <div class="mdui-toolbar mdui-color-theme">
-                    <a
-                        mdui-drawer="{target: '#drawer'}"
-                        class="mdui-btn mdui-btn-icon">
-                        <i class="mdui-icon material-icons">menu</i>
-                    </a>
-                    <span class="mdui-typo-title">铃芽</span>
-                    <div class="mdui-toolbar-spacer">
-                    </div>
-                    <a
-                        onclick="document.location.reload()"
-                        class="mdui-btn mdui-btn-icon mdui-ripple">
-                        <i class="mdui-icon material-icons">refresh</i>
-                    </a>
-                </div>
-            </div>
             <!-- 主要内容 -->
             <div
                 style="margin-top:50px;"
@@ -168,24 +190,25 @@ body {
                         alt="当图片存在时，一张铃芽的图片就会显示出来" />
                 </div>
                 <br />
-                <div style="font-size:140%;">欢迎大家来到我的Blog，我是铃芽，真名<hide>我怎么会告诉你呢</hide>，现(2023年5月)十三岁，某不知名中学的初中生。
+                <div style="font-size:120%;">欢迎大家来到我的Blog，我是铃芽，真名<hide>我怎么会告诉你呢</hide>，现(2023年5月)十三岁，某不知名中学的初中生。
             </div>
             </div>
             <!-- 文章预览 -->
-            <div class="mdui-card card-margin wen-circle card-center">
-                <div class="mdui-card-media mdui-ripple">
+            <div
+                class="mdui-ripple mdui-card card-margin wen-circle card-center"
+                onclick="document.location.href='./testpost/simple.html'">
+                <div class="mdui-card-media">
                     <img src="card.png" />
                 </div>
                 <div class="mdui-card-primary">
-                    <a
-                        class="mdui-text-color-white"
-                        href="./testpost/simple.html"
-                        style="font-size: 130%;">Title</a>
+                    <div
+                        class="mdui-text-color-theme"
+                        style="font-size: 130%;">第一个Blog</div>
                 </div>
                 <div class="mdui-card-content">子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」</div>
             </div>
         </div>
-        <div class="">
+        <div>
             <div
                 class="mdui-text-color-theme"
                 style="font-size:110%;text-align:center;">©2023 铃芽 ❤️ HiSuzume</div>
