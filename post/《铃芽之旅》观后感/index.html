@@ -23,12 +23,12 @@
             name="description"
             content="
 
-emm，我想不到第一个blog写什么好，就水一个吧~" />
+虽然现在 你觉得 世界 一片黑暗，但是 黎明 终会到来。" />
         <!-- MDUI CSS -->
         <link
             rel="stylesheet"
             href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
-        <title>诫子书 - 铃芽</title>
+        <title>《铃芽之旅》观后感 - 铃芽</title>
     </head>
     <!-- HiSuzume 版权所有 请勿删除此信息 -->
     <body
@@ -57,16 +57,39 @@ emm，我想不到第一个blog写什么好，就水一个吧~" />
             </div>
         </div>
         <!-- 主要内容 -->
-        <img src="card.png" width="100%" height="10%" alt="本章节的封面图" style="box-sizing:border-box;"/>
+        <img
+            src="card.png"
+            width="100%"
+            height="10%"
+            alt="本章节的封面图"
+            style="box-sizing:border-box;"
+            class="mdui-center cover" />
         <!-- margin: 上 右 下 左 -->
-        <div id="md" class="mdui-typo" style="font-size:105%;margin: 10% 10% 10% 10%">
-## 诫子书
+        <div
+            id="md"
+            class="mdui-typo"
+            style="font-size:105%;margin: 10% 10% 10% 10%">
+### 《铃芽之旅》 观后感
 
-emm，我想不到第一个blog写什么好，就水一个吧~
+虽然现在 你觉得 世界 一片黑暗，但是 黎明 终会到来。
 
-夫君子之行，静以修身，俭以养德。非淡泊无以明志，非宁静无以致远。夫学须静也，才须学也，非学无以广才，非志无以成学。淫慢则不能励精，险躁则不能治性。年与时驰，意与日去，遂成枯落，多不接世，悲守穷庐，将复何及！
+注：本文的铃芽指的是《铃芽之旅》中的女主角岩户铃芽
 
-[经典咏流传 蔡国庆](https://www.bilibili.com/video/av85308725/)
+**有点水请见谅（逃）**
+
+#### 开始吟唱
+
+首先，我铃芽的遭遇表示惋惜，她在幼时遭受海啸(由地震引起)带来的巨大的心灵创伤，常使她难以面对，
+
+但是，我又很喜欢她。现在的铃芽是一个[富有责任心]、[乐观]以及[勇敢坚强]的女生，是我目前见过的最有个性的角色。与此同时，我希望可以用这个名字来告诉我自己，我要面对现实，不要让自己沉浸在痛苦之中不断挣扎。因为，
+
+**虽然现在你觉得世界一片黑暗，但是黎明终会到来！**
+
+同时，希望在看的各位也能乐观地面对生活中的坎，坚持不懈，不因为小小的困难而悲伤，找到属于自己的未来！
+
+[富有责任心]:javascript:alert('铃芽因为自己的过失(不慎打开往门并放出要石使草太变成铃芽的椅子)而自愿承担闭门和救回草太的责任。')
+[乐观]:javascript:alert('在影片最后，铃芽走出了心里面的阴影，完成了自我救赎。')
+[勇敢坚强]:javascript:alert('①铃芽为了关上摩天轮的往门，甚至爬上了一个轮之上②铃芽为了救回草太(可能)而进入“常世”。')
         </div>
         <div>
             <div
@@ -76,11 +99,31 @@ emm，我想不到第一个blog写什么好，就水一个吧~
         <script src="https://cdn.jsdelivr.net/npm/showdown">
         </script>
         <script>
+/*配置MD解析选项*/
+showdown.setOption('customizedHeaderId',true);
+showdown.setOption('tables',true);
+showdown.setOption('strikethrough',true);
+showdown.setOption('tasklists',true);
+showdown.setOption('underline',true);
+showdown.setOption('backslashEscapesHTMLTags',true);
+/*获取元素*/
 var mdc = document.getElementById("md");
+/*解析*/
 var converter = new showdown.Converter(),
     text = mdc.textContent + "",
     html = converter.makeHtml(text);
+/*显示*/
 mdc.innerHTML = html;
+/*定义对话框*/
+alert = function(c) {
+    mdui.dialog({
+        title: '提示',
+        content: c + '',
+        buttons: [{
+            text: '确定'
+        }]
+    });
+}
         </script>
         <!-- MDUI JavaScript -->
         <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js">
