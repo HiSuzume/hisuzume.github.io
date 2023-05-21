@@ -1,0 +1,157 @@
+<!doctype html>
+<!-- 黎明，终会到来 | 此页面由铃芽制作 -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+        <meta
+            name="renderer"
+            content="webkit" />
+        <meta
+            name="force-rendering"
+            content="webkit" />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge,chrome=1" />
+        <meta
+            name="description"
+            content="虽然现在你觉得世界一片黑暗，但是黎明终会到来。" />
+        <!-- MDUI CSS -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
+        <title>{标题} - 铃芽</title>
+    </head>
+    <!-- 如果class添加了mdui-locked，
+      那么将只能在打开抽屉后才能解锁滑动，
+      不明用途抄代码害人不浅啊 -->
+    <body
+        class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-teal mdui-loaded">
+
+        <style>
+/* 
+ * 为了使页面更加赏心悦目，用了自定义字体
+ * 只不过可能部分用户会导致网页加载很久
+ */
+
+@font-face {
+    font-family: 'myfont';
+    src:url('https://cdn.jsdelivr.net/gh/HiSuzume/hisuzume/font.ttf');
+}
+
+* {
+    font-family: 'myfont';
+}
+
+.wen-circle {
+    border-radius:20px 20px 20px 20px;
+}
+
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+
+.card-margin {
+    margin: 20px 20px 20px 20px;
+}
+
+hide {
+    color: transparent;
+    text-shadow:2px 2px 12px #000000;
+}
+
+hide:hover {
+    color: #000000;
+    text-shadow:0px 0px 3px #000000;
+}
+
+.content {
+	margin-left:5%;
+	margin-right:5%;
+}
+
+/*图片 & 文章卡片 响应式*/
+@media only screen and (min-width: 0px) {
+    .img {
+        max-width:25%;
+    }
+    .card-center {
+	    margin-left:15%;
+	    margin-right:15%;
+	    margin-top: 30px;
+	    max-width: 100%;
+	    max-height: 60%;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .img {
+        max-width:15%;
+    }
+    .card-center {
+	    margin-left:23%;
+	    margin-right:23%;
+	    margin-top: 30px;
+	    max-width: 100%;
+	    max-height: 60%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .img {
+        max-width:10%;
+    }
+    .card-center {
+	    margin-left:30%;
+	    margin-right:30%;
+	    margin-top: 30px;
+	    max-width: 100%;
+	    max-height: 60%;
+    }
+}
+</style>
+        <!-- MDUI 标题栏 -->
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-theme">
+                <a
+                    onclick="document.location.replace('../')"
+                    mdui-tooltip="{content: '返回'}"
+                    class="mdui-btn mdui-btn-icon">
+                    <i class="mdui-icon material-icons">arrow_back</i>
+                </a>
+                <span class="mdui-typo-title">铃芽</span>
+                <div class="mdui-toolbar-spacer">
+                </div>
+                <a
+                    onclick="document.location.reload()"
+                    mdui-tooltip="{content: '刷新'}"
+                    class="mdui-btn mdui-btn-icon mdui-ripple">
+                    <i class="mdui-icon material-icons">refresh</i>
+                </a>
+            </div>
+        </div>
+        <!-- 主要内容 -->
+        <!-- margin: 上 右 下 左 -->
+        <div id="md" style="margin: 10% 10% 10% 10%">
+{内容}
+        </div>
+        <div>
+            <div
+                class="mdui-text-color-theme"
+                style="font-size:110%;text-align:center;">©2023 铃芽 ❤️ HiSuzume</div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/showdown">
+        </script>
+        <script>
+var mdc = document.getElementById("md");
+var converter = new showdown.Converter(),
+    text = mdc.textContent + "",
+    html = converter.makeHtml(text);
+mdc.innerHTML = html;
+        </script>
+        <!-- MDUI JavaScript -->
+        <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js">
+        </script>
+    </body>
+</html>
