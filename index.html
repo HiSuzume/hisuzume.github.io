@@ -32,13 +32,13 @@
     </head>
     <!-- HiSuzume 版权所有 请勿删除此信息 -->
     <body
-        class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-teal mdui-loaded">
+        class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-teal-a700 mdui-loaded">
         <link
             rel="stylesheet"
             href="style.css" />
         <div>
             <!-- MDUI 标题栏 -->
-            <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-appbar mdui-appbar-fixed" mdui-headroom>
                 <div class="mdui-toolbar mdui-color-theme">
                     <a
                         mdui-drawer="{target: '#drawer'}"
@@ -164,8 +164,7 @@
                 <div style="text-align:center;">
                     <img
                         src="suzume.png"
-                        class="img"
-                        style="border-radius:200px 200px 200px 200px;"
+                        class="img mdui-img-circle"
                         alt="当图片存在时，一张铃芽的图片就会显示出来" />
                 </div>
                 <br />
