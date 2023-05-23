@@ -1,1 +1,1 @@
-dalvikvm -cp Main.dex Main compile $(dirname "$0")
+dalvikvm -cp classes.dex Main compile $(dirname "$0")

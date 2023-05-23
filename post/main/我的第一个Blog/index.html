@@ -19,52 +19,59 @@
             content="IE=edge,chrome=1" />
         <link
             rel="icon"
-            href="icon.ico"
+            href="../../../icon.ico"
             type="image/x-icon" />
         <meta
             name="description"
-            content="虽然现在你觉得世界一片黑暗，但是黎明终会到来。" />
+            content="
+
+Hello，world！" />
         <!-- MDUI CSS -->
         <link
             rel="stylesheet"
             href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
-        <title>铃芽 | 黎明 终会到来</title>
+        <title>我的第一个Blog - 铃芽</title>
     </head>
     <!-- HiSuzume 版权所有 请勿删除此信息 -->
     <body
         class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-teal mdui-loaded">
         <link
             rel="stylesheet"
-            href="style.css" />
-        <div>
-            <!-- MDUI 标题栏 -->
-            <div class="mdui-appbar mdui-appbar-fixed">
-                <div class="mdui-toolbar mdui-color-theme">
-                    <a
-                        mdui-drawer="{target: '#drawer'}"
-                        mdui-tooltip="{content: '侧边栏'}"
-                        class="mdui-btn mdui-btn-icon">
-                        <i class="mdui-icon material-icons">menu</i>
-                    </a>
-                    <span class="mdui-typo-title">铃芽</span>
-                    <div class="mdui-toolbar-spacer">
-                    </div>
-                    <a
-                        onclick="document.location.reload()"
-                        mdui-tooltip="{content: '刷新'}"
-                        class="mdui-btn mdui-btn-icon mdui-ripple">
-                        <i class="mdui-icon material-icons">refresh</i>
-                    </a>
+            href="../../../style.css" />
+        <!-- MDUI 标题栏 -->
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-theme">
+                <!--<a
+                    onclick="document.location.replace('../../../')"
+                    mdui-tooltip="{content: '返回'}"
+                    class="mdui-btn mdui-btn-icon">
+                    <i class="mdui-icon material-icons">arrow_back</i>
+                </a>-->
+                <a
+                    mdui-drawer="{target: '#drawer'}"
+                    mdui-tooltip="{content: '侧边栏'}"
+                    class="mdui-btn mdui-btn-icon">
+                    <i class="mdui-icon material-icons">menu</i>
+                </a>
+                <a class="mdui-typo-title" href="../../../">铃芽</a>
+                <div class="mdui-toolbar-spacer">
                 </div>
+                <a
+                    onclick="document.location.reload()"
+                    mdui-tooltip="{content: '刷新'}"
+                    class="mdui-btn mdui-btn-icon mdui-ripple">
+                    <i class="mdui-icon material-icons">refresh</i>
+                </a>
             </div>
-            <!-- 应用抽屉 -->
+        </div>
+        <!-- 应用抽屉 -->
+        <div
+            class="mdui-drawer"
+            id="drawer">
             <div
-                class="mdui-drawer"
-                id="drawer">
-                <div
-                    class="mdui-list"
-                    mdui-collapse="{accordion: true}"
-                    style="margin-bottom: 76px;">
+                class="mdui-list"
+                mdui-collapse="{accordion: true}"
+                style="margin-bottom: 76px;">
 <div class="mdui-collapse-item">
                         <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
                             <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme">link</i>
@@ -131,12 +138,12 @@
                         </ul>
                     </div>
                     <div class="mdui-collapse-item">
-                        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-                            <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme">archive</i>
-                            <div class="mdui-list-item-content">文章归档</div>
-                            <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
-                        </div>
-                        <ul class="mdui-collapse-item-body mdui-list">
+                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme">archive</i>
+                        <div class="mdui-list-item-content">文章归档</div>
+                        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <ul class="mdui-collapse-item-body mdui-list">
 <li class="mdui-list-item mdui-ripple">
                                 <i class="mdui-list-item-icon mdui-icon material-icons">comment</i>
                                 <a
@@ -154,53 +161,73 @@
                                     href="./post/学习资料/">学习资料</a>
                             </li>
                         </ul>
-                    </div>
                 </div>
             </div>
-            <!-- 主要内容 -->
-            <div
-                style="margin-top:50px;"
-                class="content">
-                <div
-                    class="mdui-text-color-theme"
-                    style="font-size:170%;text-align:center;">“虽然现在 你觉得<br />世界 一片黑暗，<br />但是 黎明 终会到来。”<br />
-                    <br />
-                </div>
-                <div style="text-align:center;">
-                    <img
-                        src="suzume.png"
-                        class="img"
-                        style="border-radius:200px 200px 200px 200px;"
-                        alt="当图片存在时，一张铃芽的图片就会显示出来" />
-                </div>
-                <br />
-                <div style="font-size:120%;">欢迎大家来到我的Blog，我是铃芽，真名<hide>我怎么会告诉你呢</hide>，现(2023年5月)十三岁，某不知名中学的初中生。
-            </div>
-            </div>
-<!-- 文章预览 -->
-            <div
-                class="mdui-ripple mdui-card card-margin wen-circle card-center"
-                onclick="document.location.replace('./post/main/我的第一个Blog/')">
-                <div class="mdui-card-media">
-                    <img
-                        src="./post/main/我的第一个Blog/card.png"
-                        onerror="this.src='default_card.png'" />
-                </div>
-                <div class="mdui-card-primary">
-                    <div
-                        class="mdui-text-color-theme"
-                        style="font-size: 130%;">我的第一个Blog</div>
-                </div>
-                <div class="mdui-card-content">
+        </div>
+        <!-- 主要内容 -->
+        <img
+            src="card.png"
+            onerror="this.src='../../../default_card.png'"
+            width="100%"
+            height="10%"
+            alt="本章节的封面图"
+            style="box-sizing:border-box;"
+            class="mdui-center cover" />
+        <!-- margin: 上 右 下 左 -->
+        <div
+            id="md"
+            class="mdui-typo"
+            style="font-size:105%;margin: 10% 10% 10% 10%">
+### 我的第一个Blog
 
-Hello，world！</div>
-            </div>
+Hello，world！
+
+emm，这可能是我唯一一个做成功的网站~~你在开什么玩笑~~
+
+我自己感觉还可以罢，也是我第一个响应式网站测试
+
+一开始打算用Hexo，但是复杂的配置劝退了我（逃）
+
+于是我自己写了个编译器~~当然用的文本替换和模板~~
+
+就说到这里了。嗯，到时间去学校了，各位再见~
         </div>
         <div>
             <div
                 class="mdui-text-color-theme"
                 style="font-size:110%;text-align:center;">Copyright © 2023 铃芽 💮 HiSuzume</div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/showdown">
+        </script>
+        <script>
+/*配置MD解析选项*/
+showdown.setOption('customizedHeaderId',true);
+showdown.setOption('tables',true);
+showdown.setOption('strikethrough',true);
+showdown.setOption('tasklists',true);
+showdown.setOption('underline',true);
+showdown.setOption('backslashEscapesHTMLTags',true);
+showdown.setOption('ghCodeBlocks',true);
+/*获取元素*/
+var mdc = document.getElementById("md");
+/*解析*/
+var converter = new showdown.Converter(),
+    text = mdc.textContent + "",
+    html = converter.makeHtml(text);
+/*显示*/
+mdc.innerHTML = html;
+/*定义对话框*/
+alert = function(c) {
+    mdui.dialog({
+        title: '提示',
+        content: c + '',
+        buttons: [{
+            text: '确定'
+        }]
+    });
+}
+n = function(){}
+        </script>
         <!-- MDUI JavaScript -->
         <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js">
         </script>

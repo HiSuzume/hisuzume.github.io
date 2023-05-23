@@ -19,52 +19,59 @@
             content="IE=edge,chrome=1" />
         <link
             rel="icon"
-            href="icon.ico"
+            href="../../../icon.ico"
             type="image/x-icon" />
         <meta
             name="description"
-            content="虽然现在你觉得世界一片黑暗，但是黎明终会到来。" />
+            content="
+
+扉の向こうには、すべての時間があった。" />
         <!-- MDUI CSS -->
         <link
             rel="stylesheet"
             href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
-        <title>铃芽 | 黎明 终会到来</title>
+        <title>《铃芽之旅》个评 - 铃芽</title>
     </head>
     <!-- HiSuzume 版权所有 请勿删除此信息 -->
     <body
         class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-teal mdui-loaded">
         <link
             rel="stylesheet"
-            href="style.css" />
-        <div>
-            <!-- MDUI 标题栏 -->
-            <div class="mdui-appbar mdui-appbar-fixed">
-                <div class="mdui-toolbar mdui-color-theme">
-                    <a
-                        mdui-drawer="{target: '#drawer'}"
-                        mdui-tooltip="{content: '侧边栏'}"
-                        class="mdui-btn mdui-btn-icon">
-                        <i class="mdui-icon material-icons">menu</i>
-                    </a>
-                    <span class="mdui-typo-title">铃芽</span>
-                    <div class="mdui-toolbar-spacer">
-                    </div>
-                    <a
-                        onclick="document.location.reload()"
-                        mdui-tooltip="{content: '刷新'}"
-                        class="mdui-btn mdui-btn-icon mdui-ripple">
-                        <i class="mdui-icon material-icons">refresh</i>
-                    </a>
+            href="../../../style.css" />
+        <!-- MDUI 标题栏 -->
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-theme">
+                <!--<a
+                    onclick="document.location.replace('../../../')"
+                    mdui-tooltip="{content: '返回'}"
+                    class="mdui-btn mdui-btn-icon">
+                    <i class="mdui-icon material-icons">arrow_back</i>
+                </a>-->
+                <a
+                    mdui-drawer="{target: '#drawer'}"
+                    mdui-tooltip="{content: '侧边栏'}"
+                    class="mdui-btn mdui-btn-icon">
+                    <i class="mdui-icon material-icons">menu</i>
+                </a>
+                <a class="mdui-typo-title" href="../../../">铃芽</a>
+                <div class="mdui-toolbar-spacer">
                 </div>
+                <a
+                    onclick="document.location.reload()"
+                    mdui-tooltip="{content: '刷新'}"
+                    class="mdui-btn mdui-btn-icon mdui-ripple">
+                    <i class="mdui-icon material-icons">refresh</i>
+                </a>
             </div>
-            <!-- 应用抽屉 -->
+        </div>
+        <!-- 应用抽屉 -->
+        <div
+            class="mdui-drawer"
+            id="drawer">
             <div
-                class="mdui-drawer"
-                id="drawer">
-                <div
-                    class="mdui-list"
-                    mdui-collapse="{accordion: true}"
-                    style="margin-bottom: 76px;">
+                class="mdui-list"
+                mdui-collapse="{accordion: true}"
+                style="margin-bottom: 76px;">
 <div class="mdui-collapse-item">
                         <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
                             <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme">link</i>
@@ -131,12 +138,12 @@
                         </ul>
                     </div>
                     <div class="mdui-collapse-item">
-                        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-                            <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme">archive</i>
-                            <div class="mdui-list-item-content">文章归档</div>
-                            <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
-                        </div>
-                        <ul class="mdui-collapse-item-body mdui-list">
+                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme">archive</i>
+                        <div class="mdui-list-item-content">文章归档</div>
+                        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <ul class="mdui-collapse-item-body mdui-list">
 <li class="mdui-list-item mdui-ripple">
                                 <i class="mdui-list-item-icon mdui-icon material-icons">comment</i>
                                 <a
@@ -154,53 +161,81 @@
                                     href="./post/学习资料/">学习资料</a>
                             </li>
                         </ul>
-                    </div>
                 </div>
             </div>
-            <!-- 主要内容 -->
-            <div
-                style="margin-top:50px;"
-                class="content">
-                <div
-                    class="mdui-text-color-theme"
-                    style="font-size:170%;text-align:center;">“虽然现在 你觉得<br />世界 一片黑暗，<br />但是 黎明 终会到来。”<br />
-                    <br />
-                </div>
-                <div style="text-align:center;">
-                    <img
-                        src="suzume.png"
-                        class="img"
-                        style="border-radius:200px 200px 200px 200px;"
-                        alt="当图片存在时，一张铃芽的图片就会显示出来" />
-                </div>
-                <br />
-                <div style="font-size:120%;">欢迎大家来到我的Blog，我是铃芽，真名<hide>我怎么会告诉你呢</hide>，现(2023年5月)十三岁，某不知名中学的初中生。
-            </div>
-            </div>
-<!-- 文章预览 -->
-            <div
-                class="mdui-ripple mdui-card card-margin wen-circle card-center"
-                onclick="document.location.replace('./post/main/我的第一个Blog/')">
-                <div class="mdui-card-media">
-                    <img
-                        src="./post/main/我的第一个Blog/card.png"
-                        onerror="this.src='default_card.png'" />
-                </div>
-                <div class="mdui-card-primary">
-                    <div
-                        class="mdui-text-color-theme"
-                        style="font-size: 130%;">我的第一个Blog</div>
-                </div>
-                <div class="mdui-card-content">
+        </div>
+        <!-- 主要内容 -->
+        <img
+            src="card.png"
+            onerror="this.src='../../../default_card.png'"
+            width="100%"
+            height="10%"
+            alt="本章节的封面图"
+            style="box-sizing:border-box;"
+            class="mdui-center cover" />
+        <!-- margin: 上 右 下 左 -->
+        <div
+            id="md"
+            class="mdui-typo"
+            style="font-size:105%;margin: 10% 10% 10% 10%">
+### 《铃芽之旅》 个评
 
-Hello，world！</div>
-            </div>
+扉の向こうには、すべての時間があった。
+
+**注：本文的铃芽指的是《铃芽之旅》中的女主角岩户铃芽**
+
+开头那段，我铃芽的遭遇表示惋惜，她在幼时遭受海啸(由地震引起)带来的巨大的心灵创伤，在震后的几天她一直难以面对这个残酷的现实。其实，很多经历者应该深有感触，毕竟谁失去了亲人不会特别难过呢？
+
+而在铃芽旅途的路上，遇到了很多好心人，不仅无偿给她吃住，还帮助她，鼓励她，她也正是在这个旅途中自我解放，自我成长，获得安慰。
+
+当她遇见过去的自己时，她一开始不敢说出事实，到后面，她坦白了一切，并[安抚小铃芽](#suzume)。
+
+All in all,铃芽是[富有责任心]、[乐观]以及[勇敢坚强]的，是非常有个性的角色。与此同时，我把她的美好的一面作为我的榜样，面对现实，从痛苦之中解脱。因为，
+
+##### **[“虽然现在你觉得世界一片黑暗，但是黎明终会到来！”](javascript:void(0))** {suzume}
+
+同时，希望在看的各位也能乐观地面对生活中的坎，坚持不懈，不因为小小的困难而悲伤，找到属于自己的未来！
+
+[富有责任心]:javascript:alert('铃芽因为自己的过失(不慎打开往门并放出要石使草太变成铃芽的椅子)而自愿承担闭门和救回草太的责任。')
+[乐观]:javascript:alert('在影片最后，铃芽走出了心里面的阴影，完成了自我救赎。')
+[勇敢坚强]:javascript:alert('①铃芽为了关上摩天轮的往门，甚至爬上了一个轮之上②铃芽为了救回草太(可能)而进入“常世”。')
         </div>
         <div>
             <div
                 class="mdui-text-color-theme"
                 style="font-size:110%;text-align:center;">Copyright © 2023 铃芽 💮 HiSuzume</div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/showdown">
+        </script>
+        <script>
+/*配置MD解析选项*/
+showdown.setOption('customizedHeaderId',true);
+showdown.setOption('tables',true);
+showdown.setOption('strikethrough',true);
+showdown.setOption('tasklists',true);
+showdown.setOption('underline',true);
+showdown.setOption('backslashEscapesHTMLTags',true);
+showdown.setOption('ghCodeBlocks',true);
+/*获取元素*/
+var mdc = document.getElementById("md");
+/*解析*/
+var converter = new showdown.Converter(),
+    text = mdc.textContent + "",
+    html = converter.makeHtml(text);
+/*显示*/
+mdc.innerHTML = html;
+/*定义对话框*/
+alert = function(c) {
+    mdui.dialog({
+        title: '提示',
+        content: c + '',
+        buttons: [{
+            text: '确定'
+        }]
+    });
+}
+n = function(){}
+        </script>
         <!-- MDUI JavaScript -->
         <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js">
         </script>
