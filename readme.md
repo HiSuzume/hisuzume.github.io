@@ -1,14 +1,3 @@
-### 铃芽 | 博客仓库
+作者很懒，没有写描述！
 
-**测试中，欢迎学习😘**
-
-#### 碎碎念
-
-这是我第一次制作这个页面，当然了，用的是文本替换（逃）
-
-#### ~~编译~~生成
-
-请clone此仓库，然后运行build.sh即可。当然，如果是非Amdroid设备，请把Main.dex转换jar，并执行
-```sh
-java Main.jar <存放路径>
-```
+I'm very lazy. There isn't any describes!

@@ -1,0 +1,546 @@
+<!doctype html>
+<!-- 黎明，终会到来 | 铃芽 HiSuzume -->
+
+<!-- 自动生成，请勿修改 -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+        <meta
+            name="renderer"
+            content="webkit" />
+        <meta
+            name="force-rendering"
+            content="webkit" />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge,chrome=1" />
+        <link
+            rel="icon"
+            href="../../../icon.ico"
+            type="image/x-icon" />
+        <meta
+            name="description"
+            content="
+
+[上一节](2_1.html)" />
+        <!-- MDUI CSS -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
+        <title>铃芽之旅 - 铃芽</title>
+    </head>
+    <!-- HiSuzume 版权所有 请勿删除此信息 -->
+    <body
+        class="mdui-theme-layout-auto mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-teal-a700 mdui-loaded">
+        <link
+            rel="stylesheet"
+            href="../../../style.css" />
+        <!-- MDUI 标题栏 -->
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-theme">
+                <!--<a
+                    onclick="document.location.replace('../../../')"
+                    mdui-tooltip="{content: '返回'}"
+                    class="mdui-btn mdui-btn-icon">
+                    <i class="mdui-icon material-icons">arrow_back</i>
+                </a>-->
+                <a
+                    mdui-drawer="{target: '#drawer'}"
+                    mdui-tooltip="{content: '侧边栏'}"
+                    class="mdui-btn mdui-btn-icon">
+                    <i class="mdui-icon material-icons">menu</i>
+                </a>
+                <a class="mdui-typo-title" href="../../../">铃芽</a>
+                <div class="mdui-toolbar-spacer">
+                </div>
+                <a
+                    onclick="document.location.reload()"
+                    mdui-tooltip="{content: '刷新'}"
+                    class="mdui-btn mdui-btn-icon mdui-ripple">
+                    <i class="mdui-icon material-icons">refresh</i>
+                </a>
+            </div>
+        </div>
+        <!-- 应用抽屉 -->
+        <div
+            class="mdui-drawer"
+            id="drawer">
+            <div
+                class="mdui-list"
+                mdui-collapse="{accordion: true}"
+                style="margin-bottom: 76px;">
+<div class="mdui-collapse-item">
+                        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                            <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme">link</i>
+                            <div class="mdui-list-item-content">友情链接</div>
+                            <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                        </div>
+                        <ul class="mdui-collapse-item-body mdui-list">
+                            <li
+                                class="mdui-list-item mdui-ripple"
+                                mdui-tooltip="{content: '没写完'}">
+                                <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                                <a class="mdui-list-item-content">
+                                    <del>铃芽 Chat</del>
+                                </a>
+                            </li>
+                            <li class="mdui-list-item mdui-ripple">
+                                <i class="mdui-list-item-icon mdui-icon material-icons">note</i>
+                                <a
+                                    class="mdui-list-item-content"
+                                    href="https://chenfengblog.eu.org/">辰风の博客</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mdui-collapse-item">
+                        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                            <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme">call</i>
+                            <div class="mdui-list-item-content">联系方式</div>
+                            <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                        </div>
+                        <ul class="mdui-collapse-item-body mdui-list">
+                            <li class="mdui-list-item mdui-ripple">
+                                <i class="mdui-list-item-icon mdui-icon material-icons">link</i>
+                                <a
+                                    class="mdui-list-item-content"
+                                    href="https://github.com/HiSuzume">Github</a>
+                            </li>
+                            <li class="mdui-list-item mdui-ripple">
+                                <i class="mdui-list-item-icon mdui-icon material-icons">email</i>
+                                <a
+                                    class="mdui-list-item-content"
+                                    href="mailto:himitsuha@qq.com">邮箱</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mdui-collapse-item">
+                        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                            <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme">developer_mode</i>
+                            <div class="mdui-list-item-content">我的项目</div>
+                            <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                        </div>
+                        <ul class="mdui-collapse-item-body mdui-list">
+                            <li class="mdui-list-item mdui-ripple">
+                                <i class="mdui-list-item-icon mdui-icon material-icons">http</i>
+                                <a
+                                    class="mdui-list-item-content"
+                                    href="https://github.com/HiSuzume/Lingdang-Server-Android">铃铛Server</a>
+                            </li>
+                            <li class="mdui-list-item mdui-ripple">
+                                <i class="mdui-list-item-icon mdui-icon material-icons">chat</i>
+                                <a class="mdui-list-item-content">
+                                    <del>网页聊天</del>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mdui-collapse-item mdui-collapse-item-open">
+                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme">archive</i>
+                        <div class="mdui-list-item-content">文章归档</div>
+                        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <ul class="mdui-collapse-item-body mdui-list">
+<li class="mdui-list-item mdui-ripple">
+                                <i class="mdui-list-item-icon mdui-icon material-icons">comment</i>
+                                <a
+                                    class="mdui-list-item-content"
+                                    href="../../碎碎念/">碎碎念</a>
+                            </li><li class="mdui-list-item mdui-ripple">
+                                <i class="mdui-list-item-icon mdui-icon material-icons">comment</i>
+                                <a
+                                    class="mdui-list-item-content"
+                                    href="../../main/">main</a>
+                            </li><li class="mdui-list-item mdui-ripple">
+                                <i class="mdui-list-item-icon mdui-icon material-icons">comment</i>
+                                <a
+                                    class="mdui-list-item-content"
+                                    href="../../小说集/">小说集</a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 主要内容 -->
+        <img
+            src="card.png"
+            onerror="this.src='../../../default_card.png'"
+            width="100%"
+            height="10%"
+            alt="本章节的封面图"
+            style="box-sizing:border-box;"
+            class="mdui-center cover" />
+        <!-- margin: 上 右 下 左 -->
+        <div
+            id="md"
+            class="mdui-typo"
+            style="font-size:115%;margin: 10% 10% 10% 10%">
+### 二、2、所以我现在应该跑去的方向是？
+
+[上一节](2_1.html)
+
+[目录](menu.html)
+
+──话说回来，我至少应该在一开始的站前买防晒乳的。我怨恨地瞪着总算开始西斜的太阳，今天不知道第几次感到后悔。我的肌肤一定晒伤了，今天洗澡的时候一定会很痛。话说回来，我今晚真的能洗到澡吗？更重要的是，等到太阳下山之后，今晚我要住在哪里？该不会第一次到四国就要第一次睡户外？连续两天都不能洗澡？我隔着这条山路的栏杆看底下的巨大贮水池，以绝望的心情想到：如果今晚也不能洗澡，最糟糕的情况就得洗冷水了。
+
+我们依据上传到社群网站的照片，一再上下电车，追踪大臣（那只白猫）的足迹。然而每当到达照片中的地点，又有别的地点的照片上传，根本没完没了。不过目前也没有其他线索，所以我们现在正在前往两小时前上传的照片中的地点。照片中的大臣在橘子果园中央装可爱，附上的文字是「白猫造访我们家的农园！＃跟大臣在一起」。爬上这条山路，应该就会到达那座农园。到这里的路上，一家便利商店或杂货店都没有，所以我也一直没有买到防晒乳。
+
+背后传来机车的声音。
+
+「草太！」
+
+我连忙呼唤，跑向走在几公尺前方的椅子，从椅背把它抓起来。轻型机车在千钧一发之际驶过拿起椅子的我。
+
+「……没有被看到吧？」
+
+「你不用那么担心。」
+
+草太笑着说。不过我认为他太缺乏危机意识了。如果像电影《玩具总动员》那样被坏人抓走怎么办？除了找猫以外，又会增加抢回椅子的任务。话说回来，一直拿着儿童椅也很容易让手臂疲劳，因此在没有人的地方，只能请他自己走路。
+
+「咚！」从斜坡上方传来好像有东西掉下来的声音，以及机车紧急刹车的声音。接着隐约听到有女生在说「糟糕」。
+
+「嗯？」我抬头看斜坡上方。「……哇？」
+
+大量橘子沿着狭窄的斜坡滚下来。我想起刚刚经过的机车货架上载了很大的箱子。
+
+「天啊～」
+
+大量的橘子扩散到整条路的宽度，不断朝我们逼近。草太迅速从呆站在原地的我手中跳下去。我惊讶地注视他的行踪，看到他用脚勾住路旁田里的防兽网，然后又折回来。
+
+「铃芽，压住那一边！」
+
+「啊？好！」
+
+草太拖着网子经过我面前，我们就等于是在道路两端张开网子。几乎在同一时间，所有橘子都咚咚咚地滚进网子里。
+
+「……不会吧？」
+
+我听到声音抬起头，看到戴安全帽的女生站在斜坡上，呆呆地俯视我们。草太这时候才装成无生命的样子，「喀哒」一声倒在路旁。滚下来的橘子都被我们成功捕获了。
+
+
+
+「真的很感谢你！你帮了我一个大忙！」
+
+棕色短发、穿着红色学校运动服的女生抓着我的双手用力甩。我对她的气势感到些许困惑，不过还是勉强挤出笑脸说「没什么」。
+
+「你简直就像魔法师一样！到底是怎么做到的？」
+
+「啊……」我知道她似乎没看到椅子在动，松了一口气，然后含糊地说：「就……没想太多身体就自动反应……这样吧？」
+
+「真的？太厉害了！」
+
+她似乎真的感到佩服，画了浓妆的圆眼睛闪闪发光。
+
+「我叫千果，高中二年级。」
+
+她指着自己的胸口说。
+
+「啊，我跟你同年！我叫铃芽。」
+
+「哦，铃芽。好可爱的名字！」
+
+哇，这个女生和我的距离好近。不过听到她跟我同年，我也突然产生亲切感。
+
+「对了，铃芽，你的制服──」她很亲昵地[直呼我的名字]，不过完全没有讨厌的感觉。她从头到脚打量我之后说：「你不是这一带的学生吧？」
+
+「嗯。」
+
+我也直接称呼她的名字吧？我忽然感到高兴，内心如此决定，并告诉她（隐瞒很多细节的）事情原委。
+
+「什么？你为了找猫……从九州来这里？」
+
+千果看着我显示在手机上的橘子果园照片，惊讶地问。我们并肩坐在路旁的空地。周遭原本不绝于耳的蝉鸣声，不知何时已经被暮蝉的合唱取代。道路下方贮水池的水面，也从明亮的蓝色沉淀为偏绿的灰色。
+
+「那只猫是你养的猫吗？」千果把手机还给我并问。
+
+「嗯，也不能算是……」
+
+我含糊地回答，吃了一片她为了表达感谢送我的橘子。橘子甜到令人惊讶。干渴的喉咙得到滋润，甜味瞬间被走累的身体吸收。我接着一口吃下六片左右的橘子。这比便利商店的柳橙汁美味一千倍。
+
+「好好吃，感觉今天晒的太阳都能一笔勾消了！」
+
+我这么说，千果就开心地笑了。
+
+「刚刚真对不起。都是因为路面高出来。」
+
+「高出来？」
+
+「嗯。轮胎直接驶过高出来的部分，结果橡皮带就被震开了。昨天明明没有像那样高出来的地方──不过还是得怪我自己，没有把箱子固定好。」
+
+「真辛苦……你是在打工吗？」
+
+「不是。我爸妈是做生意的。这些橘子已经没办法提供给顾客，只能拿去加工，所以你尽管吃吧。好好把紫外线彻底勾消。」
+
+我们同时笑了。橘子的甜味和千果爽朗的声音，让我身体的紧张逐渐缓解。
+
+「对了，铃芽，你正要去那座果园吗？」
+
+「嗯？呃，对呀！」
+
+我有些慌张，再次拿出手机显示照片。糟糕糟糕，我完全沉浸在放学后聊天的氛围。我重新检视照片，然后为了确认周围的风景抬起头。
+
+「千果，这张照片的地点应该在这附──」
+
+我想要说「这附近」，但说到一半却哽在喉咙，只吐出沙哑的声音。
+
+「……铃芽，怎么了？」
+
+我无法回答。我可以感觉到千果诧异地看着我，但是我的视线却彷佛缝在一点上，无法从「那个」移开。为什么会出现在这种地方？暮蝉的叫声不知何时已经完全停止。隔着贮水池，在远方的山上，乌鸦发出「呱呱」叫声聚集在一起。一道红黑色的烟缓缓上升，把那群乌鸦分为左右两半。那道烟看起来微微发光──那是只有我们才看得到的那只巨大蚯蚓。
+
+「那、那个──」
+
+我的声音在颤抖。我拿起脚边的草太，对千果说：
+
+「对不起，我突然有急事！真的很对不起！」
+
+「咦？急事？」
+
+我抱起椅子，反射性地开始奔跑。千果发出疑惑的声音，但我无暇回头，往蚯蚓出现的方向奔上山路。
+
+「草太，蚯蚓会到处出现吗？」
+
+「这块土地的后门打开了！必须赶紧关上，否则──」
+
+又是地震？我感到从脚底传来一阵毛毛的感觉，便加快脚步，想要踩扁那股不舒服感。又粗又长的蚯蚓延伸到天空。草太发出焦急的声音：
+
+「这个距离用跑的来不及！」
+
+「可是……」
+
+「喂～铃芽～」
+
+我听到背后传来呼唤声，转头一看，是骑着轻型机车的千果。她在我面前「嘎」的一声刹住车。
+
+「千果！」
+
+「虽然不知道是怎么回事，不过你很急吧？」她一脸认真地盯着我的眼睛。
+
+「上车吧！」
+
+从流逝的树木之间隐约可见的蚯蚓，微微带有铜红色的光泽。太阳此时已经西沉。轻型机车毫不客气地急驰在没有车流的山路上，我则坐在货架上，紧紧抓着千果。在日落后变得渐深的青紫色当中，蚯蚓就好像在天空游走的不祥的红色夜光虫。
+
+「你真的要往这个方向？」
+
+千果面朝前方，用压过风声与引擎声的嗓门大声吼。
+
+「这前面好几年前发生过土石流，现在已经没有人住了！」
+
+「是废墟吗？那就去那里，拜托！」我也用喊的回应，然后把嘴巴凑向草太问：
+
+「还会发生地震吗？」
+
+「蚯蚓在扩散到空中的时候会吸收地气，增加重量。当它倒在地上的时候，就会发生地震。如果能够在那之前关上门，就能避免地震发生。这回一定要成功──」
+
+车灯照射在突然出现的巨大告示牌上，反射刺眼的光线。千果紧急刹车。告示牌上以很大的字体写着「因土石流灾害全面禁止通行」，地面上放了好几个三角锥。崩落的土石堵住了前方道路，机车无法前进，附近弥漫着那股浓重腐烂般的甜腻气味。
+
+「到这里就可以了！」
+
+我跳下机车，抱着椅子往前跑。
+
+「千果，真的很谢谢你！」
+
+「等、等一下！铃芽？」
+
+千果的叫声在背后越来越远。剧烈的心跳催促我快一点、快一点。在寸断的道路前方、漆黑的聚落另一边，绽放红黑色光芒的蚯蚓看起来非常巨大。脚下的地面很泥泞。我蹬着皮鞋踢起沉重的泥巴跑向前。
+
+「──铃芽，你也到这里就可以了！」
+
+草太突然这么说，并且踢开我跳到地面。他就像挣脱牵绳的狗，全力从我身边奔离。
+
+「草太，等等！」
+
+「接下来会很危险！你回刚刚那个女生那里！」
+
+「草太！」
+
+看起来像三脚动物的剪影，很快就被微暗中的瓦砾遮蔽而看不见了。不会吧，草太！我再次呼唤，但没有得到回应。
+
+这时我的呼吸突然变得急促，逼使我在原地停下脚步。我的肺部渴求空气，身体自动地大口吸入空气，结果连甜腻的气味都大量吸入胸腔里，害我不停咳嗽。我拼命调整呼吸，设法想要忘记气味，当作它不存在，不去感觉到它。我慢慢地把胸腔内混浊的气味全部吐出。当我总算能够喘过气来，便以短促的呼吸环顾周围。仍旧被土石埋没的屋顶与电线杆，处处形成无秩序的黑影。在更远处，宛若朝天空落下的红色大河显得更加明亮。脚底的地面不间断地传来可怕的地鸣，彷佛有东西朝着那道红色同时移动。
+
+──在这样的场所，我只有自己一个人。不知为何，我独自伫立在这里。我心想，又来了。我心中升起无法控制的不安与恐惧，彷佛因为某个人的安排错误，使我无法从原本应该结束的恶梦中醒来。我感觉好像被遗留下来的小孩子。没入泥土中的倾斜屋顶、不知为何仍旧屹立的围墙、没有映出任何东西的漆黑窗玻璃包围着我。累积在眼角的泪水突然溢出，蚯蚓的红色扩散在整片泪眼模糊的景象中。草太要我回家。他要我回到那个女生的地方。
+
+「就算回到千果那里……」
+
+我说出口。
+
+「就算回到九州、回到家里──」
+
+令人作呕的甜腻气味仍旧包围着我，那股气味已经存在于我的内侧而无法驱逐。明显的异物存在于这里，甚至无法假装看不到。从我的肋骨内侧突然涌起类似愤怒的感情。都已经到这种地方、到这种时候，为什么还要这样？到底要我怎么样？
+
+「我还能怎么样！」
+
+我使尽全身力量大喊，然后开始奔跑。我朝着草太消失的黑暗中，不顾一切地全力奔跑。皮鞋踩在泥巴上、踩在玻璃上、踩碎某种塑胶物体。我每跑一步，恐惧与不安就冲淡一些。我心想，没错，就是这边。往草太的方向跑，内心的不安一定能够消除。如果往反方向跑，不安一定会更加增长。所以我现在应该跑去的方向是这边。
+
+我爬上黑暗的斜坡尽头，视野就豁然开朗。在一栋栋的废弃房屋前方，有一块偌大的操场，蚯蚓就是从看似学校的建筑喷出来。我沿着道路朝着那里前进，奔跑在无人的住家之间。我看到校门出现在前方。学校的右边是山，从那里崩落的土石埋没了校园的右半部。我穿过校门，跑入操场。沿着土石排列着一个个沙袋，一直延续到大约一百公尺前方的校舍。
+
+「……学校变成后门了？」
+
+蚯蚓形成激烈的浊流，从宽敞的校舍入口喷出来。在那道光的左下方，有一个小小的剪影。小小的儿童椅正朝着双开式的巨大铝门单侧拼命推动。
+
+「草太！」
+
+「──铃芽？」
+
+红色的浊流在我的正上方流动，泥泞的地面反射着它的光芒。
+
+「钥匙……！」
+
+草太边推门边说。在他的视线前方，在我和入口的中间左右，有东西在蚯蚓的光芒下微微发光。那是草太原本挂在脖子上的钥匙。我跑过去，用右手捞起有一半埋在泥土里的钥匙，然后直接跑向草太。途中我脚底打滑，摔倒在泥土上，但立刻又爬起来，从草太上方用左手推铝门的边缘。
+
+「铃芽，你──」
+
+草太也用椅子的座面推着门的边缘，抬起头对我怒吼。
+
+「你不怕死吗？」
+
+「不怕！」
+
+草太哑口无言。不过我并不怕死，从很久以前，我就不怕那种东西。用左手推的铝门后方，彷佛有个言语无法沟通的人在那里，以胡闹的心情要把门推开，产生不舒服的震动，我的右手贴在地面，紧紧握住沾了泥巴的钥匙。
+
+「钥匙──」草太一边拼命推门一边说，「被涌出来的浊流冲走了。我的手构不到钥匙──幸亏你来了──」
+
+他奋力用三支脚挺住，我也把浑身力量灌注在左手臂，慢慢地把门推回去。蚯蚓的喷发逐渐变细。还有一点点，再一点点。我一边拼命推，一边抬头看蚯蚓。
+
+「啊！」
+
+蚯蚓在空中绽放巨大的铜红色花朵。往操场看过去，地面上长出无数的金色线条，朝着空中的蚯蚓延伸。蚯蚓正在吸收地气。在空中形成巨大花朵的蚯蚓吸饱地气，体内蓄积充足的重量之后，缓缓地开始倒向地面。
+
+「铃芽，你来锁门！」
+
+草太在我的胸口下方喊。
+
+「什么？」
+
+「没时间了。闭上眼睛，想像过去在这里生活的人！」
+
+「什么？」
+
+「这样的话，钥匙孔就会出现！」
+
+「你这么说，我也──」
+
+我看着草太。他仍旧盯着门，用急迫的声音说：
+
+「拜托！我完全无能为力。凭这副身体，我没办法做任何事……拜托，闭上眼睛！」
+
+他急切的口吻让我反射性地闭上眼睛。但是我该怎么做？想像以前生活在这里的人？要怎么──
+
+「想像过去曾经出现在这里的景象、居住在这里的人、他们的情感。想像之后，倾听声音──」
+
+过去曾经出现在这里的景象──我试图想像：山峦环绕的学校。太阳下的大操场。校舍的入口两侧和我的高中一样是饮水处，有成排的水龙头。现在被埋在泥巴底下的这个地方，昔日一定也有穿运动服的学生在喝水。我想到千果爽朗的笑容。水龙头的水甘甜冷冽，她和朋友笑着说「多喝一点」。有人在道早安。上学时间一定很热闹。早安，早安，早安。我可以听到声音。他们在聊懒得考试、关于老师的八卦、向单恋对象告白的计画。我可以看见颜色：各学年不同的三色运动服。反射朝阳的白色水手服。改短到膝上长度的深蓝色裙子。打开到第二颗扣子的耀眼衬衫，还有偷偷染的各种发色。
+
+「诚惶诚恐呼唤[日不见之神]，」
+
+草太又开始用那好像在唱歌的调子吟唱。
+
+「先祖之产土神。领受已久之山河，诚惶诚恐，谨此──」
+
+「啊──」
+
+我的右手中的钥匙开始变热，并且绽放蓝色的光。蓝色光束从钥匙升起，集中到铝门。在我推着门板边缘的左手旁边，有一个发光的钥匙孔逐渐成形。
+
+「──就是现在！」
+
+草太喊。我在这个声音的推动之下，把钥匙插入光芒中。
+
+「──予以奉还！」
+
+在草太喊出来的同时，我反射性地转动插入门锁的钥匙。随着「喀嚓」一声，我感觉到有东西关上。安装在铝门上的玻璃同时破裂，洒落在我们的背上。在此同时，随着膨胀的泡沫破裂般的声音，我们上方的蚯蚓爆开了。沉重的乌云彷佛同时被吹散，气压顿时变轻。
+
+过了不一会儿，反射复杂光线的雨点就好像从莲蓬头喷出来般，冲洗我们所在的废墟。
+
+「呼，呼，呼……」
+
+我坐在泥巴上，调整呼吸仰望天空。天上已经闪耀着好几颗星星，夜晚的昆虫也开始合唱，周遭弥漫着夏草新鲜的气味。校舍的入口再度恢复为无言地继续腐朽的寂静废墟。
+
+「哈哈。」一旁的草太吐着气。
+
+「咦？」
+
+「哈哈……哈哈哈哈！」
+
+草太似乎觉得很好笑，愉快地大笑。他发出「喀哒」的声音移动身体，看着我说：
+
+「太好了，铃芽，你阻止了地震发生！」
+
+「咦……？」
+
+我阻止了地震？
+
+「真的……？」
+
+从我的肚子涌起热浪般的情感，让我的嘴上泛起笑容。
+
+「……真不敢相信！太棒了，我成功了！太棒了！」
+
+草太也笑了。他浑身都是泥巴。我的衣服、或许还有脸上也都是泥巴。这就好像某种证明，也让我感到骄傲、开心而愉快。
+
+「你说我们是不是很厉害？」
+
+我把脸凑近草太，兴奋地说。在椅背上的两个凹洞、在这双眼睛当中，我看到草太的表情。我确实觉得在这当中看到温柔的笑容。
+
+「铃芽好厉害唷～」
+
+「嗯？」
+
+旁边传来稚嫩的孩童声音。我反射性地往那边看。在稍远的黑暗操场上，有一个朦胧的白色小小身影。一双黄色的圆眼睛看着我们。白猫缓缓摇动长长的尾巴，张开嘴巴。
+
+「后门还会再打开。」
+
+「──要石！」
+
+草太立即跑过去──然而大臣的身影已经消失在黑暗中。
+
+「……是那家伙打开门的？」
+
+我以颤抖的呼吸喃喃地问。草太盯着猫消失的方向好一阵子。
+
+[直呼我的名字]:javascript:alert(`日文在称呼刚认识的对象时，通常会在名字下方加上「さん」等敬称，等到变熟之后才取消。铃芽与草太（以及旅途中认识的其他人）在日文中彼此称呼时是有加敬称的，但千果则一开始就没有加。`)
+
+[日不见之神]:javascript:alert(`「日不见」同时也是日本鼩鼹的名称，日本鼩鼹也会以蚯蚓为食。`)
+
+[下一节](2_3.html)
+        </div>
+        <div>
+            <div
+                class="mdui-text-color-theme"
+                style="font-size:110%;text-align:center;">Copyright © 2023 铃芽 💮 HiSuzume</div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/showdown">
+        </script>
+        <script>
+/*配置MD解析选项*/
+showdown.setOption('customizedHeaderId',true);
+showdown.setOption('tables',true);
+showdown.setOption('strikethrough',true);
+showdown.setOption('tasklists',true);
+showdown.setOption('underline',true);
+showdown.setOption('backslashEscapesHTMLTags',true);
+showdown.setOption('ghCodeBlocks',true);
+/*获取元素*/
+var mdc = document.getElementById("md");
+/*解析*/
+var converter = new showdown.Converter(),
+    text = mdc.textContent + "",
+    html = converter.makeHtml(text);
+/*显示*/
+mdc.innerHTML = html;
+/*定义对话框*/
+alert = function(c) {
+    mdui.dialog({
+        title: '提示',
+        content: c + '',
+        buttons: [{
+            text: '确定'
+        }]
+    });
+}
+        </script>
+        <!-- MDUI JavaScript -->
+        <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js">
+        </script>
+    </body>
+</html>

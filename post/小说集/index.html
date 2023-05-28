@@ -19,59 +19,52 @@
             content="IE=edge,chrome=1" />
         <link
             rel="icon"
-            href="../../../icon.ico"
+            href="../../icon.ico"
             type="image/x-icon" />
         <meta
             name="description"
-            content="
-
-这可能是有史以来最离谱的一次晚修了。" />
+            content="虽然现在你觉得世界一片黑暗，但是黎明终会到来。" />
         <!-- MDUI CSS -->
         <link
             rel="stylesheet"
             href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
-        <title>2023.5.23晚记事 - 铃芽</title>
+        <title>归档:小说集 - 铃芽</title>
     </head>
     <!-- HiSuzume 版权所有 请勿删除此信息 -->
     <body
         class="mdui-theme-layout-auto mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-teal-a700 mdui-loaded">
         <link
             rel="stylesheet"
-            href="../../../style.css" />
-        <!-- MDUI 标题栏 -->
-        <div class="mdui-appbar mdui-appbar-fixed">
-            <div class="mdui-toolbar mdui-color-theme">
-                <!--<a
-                    onclick="document.location.replace('../../../')"
-                    mdui-tooltip="{content: '返回'}"
-                    class="mdui-btn mdui-btn-icon">
-                    <i class="mdui-icon material-icons">arrow_back</i>
-                </a>-->
-                <a
-                    mdui-drawer="{target: '#drawer'}"
-                    mdui-tooltip="{content: '侧边栏'}"
-                    class="mdui-btn mdui-btn-icon">
-                    <i class="mdui-icon material-icons">menu</i>
-                </a>
-                <a class="mdui-typo-title" href="../../../">铃芽</a>
-                <div class="mdui-toolbar-spacer">
+            href="../../style.css" />
+        <div>
+            <!-- MDUI 标题栏 -->
+            <div class="mdui-appbar mdui-appbar-fixed">
+                <div class="mdui-toolbar mdui-color-theme">
+                    <a
+                        mdui-drawer="{target: '#drawer'}"
+                        mdui-tooltip="{content: '侧边栏'}"
+                        class="mdui-btn mdui-btn-icon">
+                        <i class="mdui-icon material-icons">menu</i>
+                    </a>
+                    <a class="mdui-typo-title" href="../../">铃芽</a>
+                    <div class="mdui-toolbar-spacer">
+                    </div>
+                    <a
+                        onclick="document.location.reload()"
+                        mdui-tooltip="{content: '刷新'}"
+                        class="mdui-btn mdui-btn-icon mdui-ripple">
+                        <i class="mdui-icon material-icons">refresh</i>
+                    </a>
                 </div>
-                <a
-                    onclick="document.location.reload()"
-                    mdui-tooltip="{content: '刷新'}"
-                    class="mdui-btn mdui-btn-icon mdui-ripple">
-                    <i class="mdui-icon material-icons">refresh</i>
-                </a>
             </div>
-        </div>
-        <!-- 应用抽屉 -->
-        <div
-            class="mdui-drawer"
-            id="drawer">
+            <!-- 应用抽屉 -->
             <div
-                class="mdui-list"
-                mdui-collapse="{accordion: true}"
-                style="margin-bottom: 76px;">
+                class="mdui-drawer"
+                id="drawer">
+                <div
+                    class="mdui-list"
+                    mdui-collapse="{accordion: true}"
+                    style="margin-bottom: 76px;">
 <div class="mdui-collapse-item">
                         <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
                             <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme">link</i>
@@ -138,121 +131,68 @@
                         </ul>
                     </div>
                     <div class="mdui-collapse-item mdui-collapse-item-open">
-                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-                        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme">archive</i>
-                        <div class="mdui-list-item-content">文章归档</div>
-                        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
-                    </div>
-                    <ul class="mdui-collapse-item-body mdui-list">
+                        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                            <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme">archive</i>
+                            <div class="mdui-list-item-content">文章归档</div>
+                            <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                        </div>
+                        <ul class="mdui-collapse-item-body mdui-list">
 <li class="mdui-list-item mdui-ripple">
                                 <i class="mdui-list-item-icon mdui-icon material-icons">comment</i>
                                 <a
                                     class="mdui-list-item-content"
-                                    href="../../碎碎念/">碎碎念</a>
+                                    href="../碎碎念/">碎碎念</a>
                             </li><li class="mdui-list-item mdui-ripple">
                                 <i class="mdui-list-item-icon mdui-icon material-icons">comment</i>
                                 <a
                                     class="mdui-list-item-content"
-                                    href="../../main/">main</a>
+                                    href="../main/">main</a>
                             </li><li class="mdui-list-item mdui-ripple">
                                 <i class="mdui-list-item-icon mdui-icon material-icons">comment</i>
                                 <a
                                     class="mdui-list-item-content"
-                                    href="../../小说集/">小说集</a>
+                                    href="../小说集/">小说集</a>
                             </li>
                         </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- 主要内容 -->
-        <img
-            src="card.png"
-            onerror="this.src='../../../default_card.png'"
-            width="100%"
-            height="10%"
-            alt="本章节的封面图"
-            style="box-sizing:border-box;"
-            class="mdui-center cover" />
-        <!-- margin: 上 右 下 左 -->
-        <div
-            id="md"
-            class="mdui-typo"
-            style="font-size:115%;margin: 10% 10% 10% 10%">
-### 2023.5.23 记晚修期间
+            <!-- 主要内容 -->
+            <div
+                style="margin-top:50px;text-align:center;"
+                class="content">
+                <strong
+                    class="mdui-text-color-theme"
+                    style="font-size:150%;">无论你在何方<br/>
+我一定会<br/>
+再和你见一面。
+                    <br />
+                </strong>
+            </div>
+<!-- 文章预览 -->
+            <div
+                class="mdui-ripple mdui-card card-margin wen-circle card-center"
+                onclick="document.location.replace('./铃芽之旅/')">
+                <div class="mdui-card-media">
+                    <img
+                        src="./铃芽之旅/card.png"
+                        onerror="this.src='../../default_card.png'" />
+                </div>
+                <div class="mdui-card-primary">
+                    <div
+                        class="mdui-text-color-theme"
+                        style="font-size: 130%;">铃芽之旅</div>
+                </div>
+                <div class="mdui-card-content">
 
-这可能是有史以来最离谱的一次晚修了。
-
-**注：本文人名均用化名**
-
-[不文雅的版本](shit.html)
-
-[最离谱的时刻：视力不好的志愿者](#zyz)
-
-#### 到校
-
-由于事情与我无关，不考虑讲解
-
-#### 晚读&晚修
-
-说实话，我很不愿意在学校上晚修，原因如下：
-
-1. **纪律实在太差**，老师一走全班炸锅，又被挨骂
-2. 夏季嘛，飞蛾有点多，但是晚修不能关灯，有飞蛾在我的衣服里面<hide>恶心死了</hide>
-3. 环境不好，和点1差不多，我很难控制自己不说话
-
-但是我估计我的监护人不会同意(《无心向学》)
-
-#### 放学 {zyz}
-
-**说实话，这是我第一次见到视力不好而且耳背的志愿者。**
-
-虽然说人家志愿者监督别人刷卡确实有点辛苦，但是他处理问题的方法真的太离谱了：
-
-> 描述：我拿着门禁卡在面前晃啊晃，然后经过《道德经》处刷卡机刷卡后准备出校门，而负责对面校警室刷卡机的志愿者们中有一个以为我没有刷卡就出校门，开口一句：“你没刷卡是吧？滚回去刷卡再给我出校门。”(注：由于没有认真听，不能完全作为参考)，然后两只手把我往后推
-
-> 而另一名志愿者看到了他粗鲁的行为，说了一句“你sha256的”，我趁势也说了一句“sha256的”，然后当着很多家长的面~~哦不太丢人了~~回骂一句：“我要做个文明人”
-
-……震撼到我了，这晚修我不上也罢。
-
-#### 结束语
-
-今天的碎碎念就到这里，**希望各位能有个美好的校园生活，同时不要学我损坏学校名誉。(笑)**
+扉の向こうには、すべての時間があった。</div>
+            </div>
         </div>
         <div>
             <div
                 class="mdui-text-color-theme"
                 style="font-size:110%;text-align:center;">Copyright © 2023 铃芽 💮 HiSuzume</div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/showdown">
-        </script>
-        <script>
-/*配置MD解析选项*/
-showdown.setOption('customizedHeaderId',true);
-showdown.setOption('tables',true);
-showdown.setOption('strikethrough',true);
-showdown.setOption('tasklists',true);
-showdown.setOption('underline',true);
-showdown.setOption('backslashEscapesHTMLTags',true);
-showdown.setOption('ghCodeBlocks',true);
-/*获取元素*/
-var mdc = document.getElementById("md");
-/*解析*/
-var converter = new showdown.Converter(),
-    text = mdc.textContent + "",
-    html = converter.makeHtml(text);
-/*显示*/
-mdc.innerHTML = html;
-/*定义对话框*/
-alert = function(c) {
-    mdui.dialog({
-        title: '提示',
-        content: c + '',
-        buttons: [{
-            text: '确定'
-        }]
-    });
-}
-        </script>
         <!-- MDUI JavaScript -->
         <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js">
         </script>
