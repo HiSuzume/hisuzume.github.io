@@ -1,3 +1,5 @@
-作者很懒，没有写描述！
+### 铃芽の博客 / Suzume's blog
 
-I'm very lazy. There isn't any describes!
+嗯~我还没想好怎么写描述呢！
+
+Emm...I couldn't describe it now!
