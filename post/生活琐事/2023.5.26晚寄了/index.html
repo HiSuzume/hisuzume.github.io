@@ -246,6 +246,9 @@ alert = function(c) {
         }]
     });
 }
+play = function(url) {
+    new Audio(url).play()
+}
 as = document.getElementById("md").getElementsByTagName("a")
 for (var i=0;i < as.length;i++) {
     as[i].classList.add("mdui-text-color-theme")
