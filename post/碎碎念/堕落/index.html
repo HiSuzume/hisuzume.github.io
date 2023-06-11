@@ -19,50 +19,57 @@
             content="IE=edge,chrome=1" />
         <link
             rel="icon"
-            href="../../icon.ico"
+            href="../../../icon.ico"
             type="image/x-icon" />
         <meta
             name="description"
-            content="虽然现在你觉得世界一片黑暗，但是黎明终会到来。" />
+            content="
+
+" />
         <!-- MDUI CSS -->
         <link
             rel="stylesheet"
             href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
-        <title>归档:碎碎念 - 铃芽</title>
+        <title>堕落 - 铃芽</title>
     </head>
     <!-- HiSuzume 版权所有 请勿删除此信息 -->
     <body
         class="mdui-theme-layout-auto mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-color-theme-accent mdui-loaded">
         <link
             rel="stylesheet"
-            href="../../style.css" />
-        <div>
-            <!-- MDUI 标题栏 -->
-            <div class="mdui-appbar mdui-appbar-fixed">
-                <div class="mdui-toolbar mdui-color-theme">
-                    <a
-                        mdui-drawer="{target: '#drawer'}"
-                        class="mdui-btn mdui-btn-icon">
-                        <i class="mdui-icon material-icons">menu</i>
-                    </a>
-                    <a class="mdui-typo-title" href="../../">铃芽</a>
-                    <div class="mdui-toolbar-spacer">
-                    </div>
-                    <a
-                        onclick="document.location.reload()"
-                        class="mdui-btn mdui-btn-icon mdui-ripple">
-                        <i class="mdui-icon material-icons">refresh</i>
-                    </a>
+            href="../../../style.css" />
+        <!-- MDUI 标题栏 -->
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-theme">
+                <!--<a
+                    onclick="document.location.replace('../../../')"
+                    mdui-tooltip="{content: '返回'}"
+                    class="mdui-btn mdui-btn-icon">
+                    <i class="mdui-icon material-icons">arrow_back</i>
+                </a>-->
+                <a
+                    mdui-drawer="{target: '#drawer'}"
+                    class="mdui-btn mdui-btn-icon">
+                    <i class="mdui-icon material-icons">menu</i>
+                </a>
+                <a class="mdui-typo-title" href="../../../">铃芽</a>
+                <div class="mdui-toolbar-spacer">
                 </div>
+                <a
+                    onclick="document.location.reload()"
+                    class="mdui-btn mdui-btn-icon mdui-ripple">
+                    <i class="mdui-icon material-icons">refresh</i>
+                </a>
             </div>
-            <!-- 应用抽屉 -->
+        </div>
+        <!-- 应用抽屉 -->
+        <div
+            class="mdui-drawer"
+            id="drawer">
             <div
-                class="mdui-drawer"
-                id="drawer">
-                <div
-                    class="mdui-list"
-                    mdui-collapse="{accordion: true}"
-                    style="margin-bottom: 76px;">
+                class="mdui-list"
+                mdui-collapse="{accordion: true}"
+                style="margin-bottom: 76px;">
 <div class="mdui-collapse-item">
                         <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
                             <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme">link</i>
@@ -129,84 +136,200 @@
                         </ul>
                     </div>
                     <div class="mdui-collapse-item mdui-collapse-item-open">
-                        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-                            <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme">archive</i>
-                            <div class="mdui-list-item-content">文章归档</div>
-                            <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
-                        </div>
-                        <ul class="mdui-collapse-item-body mdui-list">
+                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme">archive</i>
+                        <div class="mdui-list-item-content">文章归档</div>
+                        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <ul class="mdui-collapse-item-body mdui-list">
 <li class="mdui-list-item mdui-ripple">
                                 <i class="mdui-list-item-icon mdui-icon material-icons">comment</i>
                                 <a
                                     class="mdui-list-item-content"
-                                    href="../碎碎念/">碎碎念</a>
+                                    href="../../碎碎念/">碎碎念</a>
                             </li><li class="mdui-list-item mdui-ripple">
                                 <i class="mdui-list-item-icon mdui-icon material-icons">comment</i>
                                 <a
                                     class="mdui-list-item-content"
-                                    href="../生活琐事/">生活琐事</a>
+                                    href="../../生活琐事/">生活琐事</a>
                             </li><li class="mdui-list-item mdui-ripple">
                                 <i class="mdui-list-item-icon mdui-icon material-icons">comment</i>
                                 <a
                                     class="mdui-list-item-content"
-                                    href="../主页/">主页</a>
+                                    href="../../主页/">主页</a>
                             </li>
                         </ul>
-                    </div>
                 </div>
             </div>
-            <!-- 主要内容 -->
-            <div
-                style="margin-top:50px;text-align:center;"
-                class="content">
-                <strong
-                    class="mdui-text-color-theme"
-                    style="font-size:150%;">
-                    <br />
-                </strong>
-            </div>
-<!-- 文章预览 -->
-            <div
-                class="mdui-ripple mdui-card card-margin wen-circle card-center"
-                onclick="document.location.replace('./日复一日的生活/')">
-                <div class="mdui-card-media">
-                    <img
-                        src="./日复一日的生活/card.png"
-                        onerror="if(!this.retryed){this.src='../../default_card.png';this.retryed=true;}else{this.alt='无法加载卡片图片'}" />
-                </div>
-                <div class="mdui-card-primary">
-                    <div
-                        class="mdui-text-color-theme"
-                        style="font-size: 130%;">日复一日的生活</div>
-                </div>
-                <div class="mdui-card-content">
+        </div>
+        <!-- 主要内容 -->
+        <img
+            src="card.png"
+            onerror="this.src='../../../default_card.png'"
+            width="100%"
+            height="10%"
+            alt="本章节的封面图"
+            style="box-sizing:border-box;"
+            class="mdui-center cover" />
+        <!-- margin: 上 右 下 左 -->
+        <div
+            id="md"
+            class="mdui-typo"
+            style="font-size:115%;margin: 10% 10% 10% 10%">
+### 堕落
 
-生活，好比一个剧本，我们每天都这么过着。</div>
-            </div>
-        </div><!-- 文章预览 -->
-            <div
-                class="mdui-ripple mdui-card card-margin wen-circle card-center"
-                onclick="document.location.replace('./堕落/')">
-                <div class="mdui-card-media">
-                    <img
-                        src="./堕落/card.png"
-                        onerror="if(!this.retryed){this.src='../../default_card.png';this.retryed=true;}else{this.alt='无法加载卡片图片'}" />
-                </div>
-                <div class="mdui-card-primary">
-                    <div
-                        class="mdui-text-color-theme"
-                        style="font-size: 130%;">堕落</div>
-                </div>
-                <div class="mdui-card-content">
 
-</div>
-            </div>
+
+> 文案：HiSuzume
+> 
+> 灵感：生活
+>
+> 时间：2023.6.11 20:07
+
+说好的，相信自己，相信未来呢？
+
+你却一直都在堕落着，堕落着。
+
+虽然你并不想这么做，但是，在自己的内心里，一直无力抵抗。
+
+每天都在硬撑着，每天都想快点度过，撑到假期。
+
+假期离你不远了，你想要拼一下。但，你，却一次又一次地放下作业，打开手机。
+
+每天沉浸在自己得意的作品里，自己喜爱的事物里。
+
+度日如年，日复一日，年复一年。
+
+你意识到，你堕落了。别人说，你厌学了。
+
+你不敢相信自己竟如此堕落，但，每天你仍在课堂上认真学习。
+
+可是又能如何呢？疲惫不堪的你忍不住在课堂上睡着，而一根眼睫毛掉进眼睛里，险些影响到你做听力练习。
+
+所以，是你堕落了，还是，黑暗还没过去呢？
+
+还有不久，假期就到了呢……
+
+可是，你一直都没有安定下来，却总是被周围嘈杂的环境所干扰。
+
+逃离，便是你最后的净土。
+
+……
+
+你是谁？
+
+你的理想，是什么？
+
+是当程序员，还是做厨师？亦或者，资金人员？还是，其他的？
+
+你不断徘徊着，看着各种“踩坑”和“推荐”，你无从下手。
+
+可你，还没到那时候，要想这个吗？
+
+要。
+
+长久的志向指引者自己。
+
+但是，你的志向，真的，长久吗？
+
+……
+
+你每天都沉浸在苦水之中，在里面不断地挣扎着。
+
+像是沉没在深海之中，动弹不得。
+
+可是，你相信，希望就在面前。
+
+可是，你又如何，看见希望？
+
+你，病入膏肓。
+
+每天都在，取悦自己，也在伤害自己。
+
+把自己推下深渊。
+
+你，意识到了一切。
+
+但，你做到了吗？
+
+你，有做过吗？
+
+你，尝试改变了吗？
+
+……
+
+这一切，是什么？
+
+我们，都无从得知。
+
+神秘的一切，操控着我们。
+
+而我们，在坠落中。
+
+但是，我们，也在努力地，想要让自己，降得慢一点，哪怕，真的只是一点。
+
+我们，都要在这里，找到自己。
+
+找到独一无二的自己。
+
+……
+
+“你是谁？”
+
+“你现在做的这一切，有意义吗？”
+
+“又有什么用呢？”
+
+“我，就是我，我们，生来就有自己的意义。”
+
+“你，不害怕这个世界吗？”
+
+“我不害怕！”
+
+“虽然，我每天都在怒吼着，每天都在以泪洗脸，死死苦撑着。但是，我仍希望，黎明，真正地，走进我的心里。”
         </div>
         <div>
             <div
                 class="mdui-text-color-theme"
                 style="font-size:110%;text-align:center;">Copyright © 2023 铃芽 💮 HiSuzume</div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/showdown">
+        </script>
+        <script>
+/*配置MD解析选项*/
+showdown.setOption('customizedHeaderId',true);
+showdown.setOption('tables',true);
+showdown.setOption('strikethrough',true);
+showdown.setOption('tasklists',true);
+showdown.setOption('underline',true);
+showdown.setOption('backslashEscapesHTMLTags',true);
+showdown.setOption('ghCodeBlocks',true);
+/*获取元素*/
+var mdc = document.getElementById("md");
+/*解析*/
+var converter = new showdown.Converter(),
+    text = mdc.textContent + "",
+    html = converter.makeHtml(text);
+/*显示*/
+mdc.innerHTML = html;
+/*定义对话框*/
+alert = function(c) {
+    mdui.dialog({
+        title: '提示',
+        content: c + '',
+        buttons: [{
+            text: '确定'
+        }]
+    });
+}
+play = function(url) {
+    new Audio(url).play()
+}
+as = document.getElementById("md").getElementsByTagName("a")
+for (var i=0;i < as.length;i++) {
+    as[i].classList.add("mdui-text-color-theme")
+}
+        </script>
         <!-- MDUI JavaScript -->
         <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js">
         </script>
