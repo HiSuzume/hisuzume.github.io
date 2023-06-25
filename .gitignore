@@ -1,4 +1,5 @@
 /oat
+/hide
 build.sh
 classes.dex
 ArchiveIndexImpl.html
