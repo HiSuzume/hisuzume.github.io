@@ -1,0 +1,96 @@
+/* 
+ * 为了使页面更加赏心悦目，用了自定义字体
+ * 只不过可能部分用户会导致网页加载很久
+ */
+
+@font-face {
+    font-family: 'myfont';
+    src:url('./font.ttf'),url('../../font.ttf'),url('../../../font.ttf');
+}
+
+* {
+    font-family: 'myfont';
+}
+
+.wen-circle ,
+.mdui-dialog {
+    border-radius:20px 20px 20px 20px;
+}
+
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+
+.card-margin {
+    margin: 20px 20px 20px 20px;
+}
+
+hide {
+    color: transparent;
+    text-shadow:2px 2px 12px #000000;
+}
+
+hide:hover {
+    color: #000000;
+    text-shadow:0px 0px 3px #000000;
+}
+
+.content {
+	margin-left:5%;
+	margin-right:5%;
+}
+
+/*图片 & 文章卡片 响应式*/
+
+/*手机*/
+@media only screen and (min-width: 0px) {
+    .img {
+        max-width:25%;
+    }
+    .cover {
+        width:100%;
+        height:10%
+    }
+    .card-center {
+	    margin-left:15%;
+	    margin-right:15%;
+	    margin-top: 30px;
+	    max-width: 100%;
+	    max-height: 60%;
+    }
+}
+
+/*手机*/
+@media only screen and (min-width: 480px) {
+    .img {
+        max-width:15%;
+    }
+    .cover {
+        width:100%;
+        height:10%
+    }
+    .card-center {
+	    margin-left:23%;
+	    margin-right:23%;
+	    margin-top: 30px;
+	    max-width: 100%;
+	    max-height: 60%;
+    }
+}
+
+/*通常是电脑*/
+@media only screen and (min-width: 768px) {
+    .img {
+        max-width:10%;
+    }
+    .cover {
+        width:50%;
+        height:5%
+    }
+    .card-center {
+	    margin-left:30%;
+	    margin-right:30%;
+	    margin-top: 30px;
+	    max-width: 100%;
+	    max-height: 60%;
+    }
+}
