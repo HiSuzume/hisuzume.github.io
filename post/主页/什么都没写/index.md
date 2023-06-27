@@ -10,4 +10,4 @@
 
 水了一篇文章(笑)
 
-[　]:javascript:alert(`你是故意找茬是不是，你要不要吧(笑)`)
+[　]:javascript:alert(`看啥呢`)
