@@ -1,6 +1,4 @@
 /oat
-/hide
-build.sh
 classes.dex
 ArchiveIndexImpl.html
 ArchiveCardImpl.html
@@ -12,4 +10,3 @@ MainArchiveImpl.html
 IndexImpl.html
 CardImpl.html
 DrawerList.html
-push

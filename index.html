@@ -23,7 +23,7 @@
             type="image/x-icon" />
         <meta
             name="description"
-            content="人总是要死的，但是死的意义却有不同。" />
+            content="虽然现在你觉得世界一片黑暗，但是黎明终会到来。" />
         <!-- MDUI CSS -->
         <link
             rel="stylesheet"
@@ -71,15 +71,13 @@
     </div>
     <ul class="mdui-collapse-item-body mdui-list">
         <li class="mdui-list-item mdui-ripple">
-            <i class="mdui-list-item-icon mdui-icon material-icons">note</i>
+            <i class="mdui-list-item-icon mdui-icon material-icons">link</i>
             <a
                 class="mdui-list-item-content"
-                href="https://slightning.tk/">
-                SLIGHTNING
-            </a>
+                href="https://slightning.tk/">SLIGHTNING</a>
         </li>
         <li class="mdui-list-item mdui-ripple">
-            <i class="mdui-list-item-icon mdui-icon material-icons">note</i>
+            <i class="mdui-list-item-icon mdui-icon material-icons">link</i>
             <a
                 class="mdui-list-item-content"
                 href="https://chenfengblog.eu.org/">辰风の博客</a>
@@ -89,7 +87,7 @@
 <div class="mdui-collapse-item">
     <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
         <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme">call</i>
-        <div class="mdui-list-item-content">联系方式</div>
+        <div class="mdui-list-item-content">我的链接</div>
         <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
     </div>
     <ul class="mdui-collapse-item-body mdui-list">
@@ -99,11 +97,20 @@
                 class="mdui-list-item-content"
                 href="https://github.com/HiSuzume">Github</a>
         </li>
+    </ul>
+</div>
+<div class="mdui-collapse-item">
+    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme">developer_mode</i>
+        <div class="mdui-list-item-content">我的项目</div>
+        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+    </div>
+    <ul class="mdui-collapse-item-body mdui-list">
         <li class="mdui-list-item mdui-ripple">
-            <i class="mdui-list-item-icon mdui-icon material-icons">link</i>
+            <i class="mdui-list-item-icon mdui-icon material-icons">landscape</i>
             <a
                 class="mdui-list-item-content"
-                href="https://gitee.com/HiSuzume">Gitee</a>
+                href="https://github.com/HiSuzume/PalaceOfWords">言之宫</a>
         </li>
     </ul>
 </div>
@@ -119,6 +126,11 @@
     <a
         class="mdui-list-item-content"
         href="./post/主页/">主页</a>
+</li><li class="mdui-list-item mdui-ripple">
+    <i class="mdui-list-item-icon mdui-icon material-icons">comment</i>
+    <a
+        class="mdui-list-item-content"
+        href="./post/Living/">Living</a>
 </li>
                         </ul>
                     </div>
@@ -137,7 +149,7 @@
                 class="content">
                 <div
                     class="mdui-text-color-theme"
-                    style="font-size:170%;text-align:center;">“梦中的美好世界啊<br />不管再怎么美妙，<br />也都是不存在的。”<br />
+                    style="font-size:170%;text-align:center;">“梦中的美好世界啊<br />不管再怎么美好，<br />也无法触及啊。”<br />
                     <br />
                 </div>
                 <!-- <div style="text-align:center;">
@@ -147,25 +159,26 @@
                         alt="笔者副本头像" />
                 </div> -->
                 <br />
-                <div style="font-size:120%;text-align:center;">我愿在梦中度过，但却无法逃避现实。</div>
+                <div style="font-size:120%;text-align:center;">残酷的现实，却是无法逃避的。
+            </div>
             </div>
 <!-- 文章预览 -->
 <div
     class="mdui-ripple mdui-card card-margin wen-circle card-center"
-    onclick="document.location.replace('./post/主页/博客踩坑记/')">
+    onclick="document.location.replace('./post/主页/Hello World/')">
     <div class="mdui-card-media">
         <img
-            src="./post/主页/博客踩坑记/card.png"
+            src="./post/主页/Hello World/card.png"
             onerror="if(!this.retryed){this.src='default_card.png';this.retryed=true;}else{this.alt='无法加载卡片图片'}" />
     </div>
     <div class="mdui-card-primary">
         <div
             class="mdui-text-color-theme"
-            style="font-size: 130%;">博客踩坑记</div>
+            style="font-size: 130%;">Hello World</div>
     </div>
     <div class="mdui-card-content">
 
-Hexo的入门到入土之旅</div>
+Hello,world.</div>
 </div>
 </div>
         <div>
@@ -175,10 +188,6 @@ Hexo的入门到入土之旅</div>
             </div>
             <!-- MDUI JavaScript -->
             <script src="./static/mdui.min.js">
-            </script>
-            <script>
-                //重定向到带斜杠，防止资源调用错误
-                if (!document.location.href.endsWith("\/")) document.location.replace(document.location.href + "/")
             </script>
         </div>
     </body>
