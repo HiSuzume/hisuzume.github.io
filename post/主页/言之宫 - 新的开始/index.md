@@ -4,7 +4,7 @@
 
 > 作者：HiSuzume
 > 
-> 本文所指向的项目可以[点我](https://github.com/HiSuzume/PalaceOfWords)到达哦
+> 本文所指向的项目可以[点我](https://github.com/LingChair-Project/PalaceOfWords)到达哦
 > 
 > 禁止转载
 
