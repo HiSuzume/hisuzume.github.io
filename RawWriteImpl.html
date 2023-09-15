@@ -1,0 +1,111 @@
+<!doctype html>
+<!-- 黎明，终会到来 | 铃芽 HiSuzume -->
+
+<!-- 自动生成，请勿修改 -->
+
+<!-- 随笔于 2023.9.15 制作 -->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+        <meta
+            name="renderer"
+            content="webkit" />
+        <meta
+            name="force-rendering"
+            content="webkit" />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge,chrome=1" />
+        <link
+            rel="icon"
+            href="icon.ico"
+            type="image/x-icon" />
+        <meta
+            name="description"
+            content="虽然现在你觉得世界一片黑暗，但是黎明终会到来。" />
+        <!-- MDUI CSS -->
+        <link
+            rel="stylesheet"
+            href="static/mdui.min.css" />
+        <title>随笔 - HiSuzume</title>
+    </head>
+    <!-- HiSuzume 版权所有 请勿删除此信息 -->
+    <body
+        class="mdui-theme-layout-auto mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-color-theme-accent mdui-loaded">
+        <link
+            rel="stylesheet"
+            href="style.css" />
+        <div>
+            <!-- MDUI 标题栏 -->
+            <div class="mdui-appbar mdui-appbar-fixed">
+                <div class="mdui-toolbar mdui-color-theme">
+                    <a
+                        mdui-drawer="{target: '#drawer'}"
+                        class="mdui-btn mdui-btn-icon">
+                        <i class="mdui-icon material-icons">menu</i>
+                    </a>
+                    <a
+                        class="mdui-typo-title"
+                        href="index.html">HiSuzume</a>
+                    <div class="mdui-toolbar-spacer">
+                    </div>
+                    <a
+                        onclick="document.location.reload()"
+                        class="mdui-btn mdui-btn-icon mdui-ripple">
+                        <i class="mdui-icon material-icons">refresh</i>
+                    </a>
+                </div>
+            </div>
+            <!-- 应用抽屉 -->
+            <div
+                class="mdui-drawer"
+                id="drawer">
+                <div
+                    class="mdui-list"
+                    mdui-collapse="{accordion: true}"
+                    style="margin-bottom: 76px;">
+{抽屉列表}
+                    <div class="mdui-collapse-item mdui-collapse-item-open">
+                        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                            <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme">archive</i>
+                            <div class="mdui-list-item-content">文章归档</div>
+                            <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                        </div>
+                        <ul class="mdui-collapse-item-body mdui-list">
+{归档列表}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 主要内容 -->
+            <img
+                src="card.png"
+                width="100%"
+                height="10%"
+                alt="封面图"
+                style="box-sizing:border-box;"
+                class="mdui-center cover" />
+            <div
+                style="margin-top:50px;text-align:center;"
+                class="content">
+                <strong
+                    class="mdui-text-color-theme"
+                    style="font-size:150%;">“当时间能够被跨越，<br />我相信，<br />一定能回首以往的美好。”
+                    <br />
+                </strong>
+            </div>
+{随笔列表}
+        <div>
+                <div
+                    class="mdui-text-color-theme"
+                    style="font-size:110%;text-align:center;">©2023 すずめ💮HiSuzume</div>
+            </div>
+            <!-- MDUI JavaScript -->
+            <script src="static/mdui.min.js">
+            </script>
+        </div>
+    </body>
+</html>
