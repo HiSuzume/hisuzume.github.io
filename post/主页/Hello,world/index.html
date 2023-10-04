@@ -19,52 +19,59 @@
             content="IE=edge,chrome=1" />
         <link
             rel="icon"
-            href="../../icon.ico"
+            href="../../../icon.ico"
             type="image/x-icon" />
         <meta
             name="description"
-            content="虽然现在你觉得世界一片黑暗，但是黎明终会到来。" />
+            content="
+
+Hello! This is your first post in HiSuzume's blog." />
         <!-- MDUI CSS -->
         <link
             rel="stylesheet"
-            href="../../static/mdui.min.css" />
-        <title>归档:主页 - HiSuzume</title>
+            href="../../../static/mdui.min.css" />
+        <title>Hello,world - HiSuzume</title>
     </head>
     <!-- HiSuzume 版权所有 请勿删除此信息 -->
     <body
         class="mdui-theme-layout-auto mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-color-theme-accent mdui-loaded">
         <link
             rel="stylesheet"
-            href="../../style.css" />
-        <div>
-            <!-- MDUI 标题栏 -->
-            <div class="mdui-appbar mdui-appbar-fixed">
-                <div class="mdui-toolbar mdui-color-theme">
-                    <a
-                        mdui-drawer="{target: '#drawer'}"
-                        class="mdui-btn mdui-btn-icon">
-                        <i class="mdui-icon material-icons">menu</i>
-                    </a>
-                    <a
-                        class="mdui-typo-title"
-                        href="../../index.html">HiSuzume</a>
-                    <div class="mdui-toolbar-spacer">
-                    </div>
-                    <a
-                        onclick="document.location.reload()"
-                        class="mdui-btn mdui-btn-icon mdui-ripple">
-                        <i class="mdui-icon material-icons">refresh</i>
-                    </a>
+            href="../../../style.css" />
+        <!-- MDUI 标题栏 -->
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-theme">
+                <!--<a
+                    onclick="document.location.replace('../../../')"
+                    mdui-tooltip="{content: '返回'}"
+                    class="mdui-btn mdui-btn-icon">
+                    <i class="mdui-icon material-icons">arrow_back</i>
+                </a>-->
+                <a
+                    mdui-drawer="{target: '#drawer'}"
+                    class="mdui-btn mdui-btn-icon">
+                    <i class="mdui-icon material-icons">menu</i>
+                </a>
+                <a
+                    class="mdui-typo-title"
+                    href="../../../index.html">HiSuzume</a>
+                <div class="mdui-toolbar-spacer">
                 </div>
+                <a
+                    onclick="document.location.reload()"
+                    class="mdui-btn mdui-btn-icon mdui-ripple">
+                    <i class="mdui-icon material-icons">refresh</i>
+                </a>
             </div>
-            <!-- 应用抽屉 -->
+        </div>
+        <!-- 应用抽屉 -->
+        <div
+            class="mdui-drawer"
+            id="drawer">
             <div
-                class="mdui-drawer"
-                id="drawer">
-                <div
-                    class="mdui-list"
-                    mdui-collapse="{accordion: true}"
-                    style="margin-bottom: 76px;">
+                class="mdui-list"
+                mdui-collapse="{accordion: true}"
+                style="margin-bottom: 76px;">
 <div class="mdui-collapse-item">
     <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
         <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme">link</i>
@@ -133,82 +140,92 @@
     </ul>
 </div>-->
                     <div class="mdui-collapse-item mdui-collapse-item-open">
-                        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-                            <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme">archive</i>
-                            <div class="mdui-list-item-content">文章归档</div>
-                            <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
-                        </div>
-                        <ul class="mdui-collapse-item-body mdui-list">
+                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme">archive</i>
+                        <div class="mdui-list-item-content">文章归档</div>
+                        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <ul class="mdui-collapse-item-body mdui-list">
 <li class="mdui-list-item mdui-ripple">
     <i class="mdui-list-item-icon mdui-icon material-icons">comment</i>
     <a
         class="mdui-list-item-content"
-        href="../主页/index.html">主页</a>
+        href="../../主页/index.html">主页</a>
 </li><li class="mdui-list-item mdui-ripple">
     <i class="mdui-list-item-icon mdui-icon material-icons">comment</i>
     <a
         class="mdui-list-item-content"
-        href="../日记/index.html">日记</a>
+        href="../../日记/index.html">日记</a>
 </li>
                         </ul>
-                    </div>
                 </div>
             </div>
-            <!-- 主要内容 -->
-            <div
-                style="margin-top:50px;text-align:center;"
-                class="content">
-                <strong
-                    class="mdui-text-color-theme"
-                    style="font-size:150%;">
-                    <br />
-                </strong>
-            </div>
-<!-- 文章预览 -->
-<div
-    class="mdui-ripple mdui-card card-margin wen-circle card-center"
-    onclick="document.location.replace('./Hello,world/index.html')">
-    <div class="mdui-card-media">
-        <img
-            src="./Hello,world/card.png"
-            onerror="if(!this.retryed){this.src='https://api.maho.cc/random-img/pc.php';this.retryed=true;}else{this.alt='无法加载图片'}" />
-    </div>
-    <div class="mdui-card-primary">
-        <div
-            class="mdui-text-color-theme"
-            style="font-size: 130%;">Hello,world</div>
-    </div>
-    <div class="mdui-card-content">
-
-Hello! This is your first post in HiSuzume's blog.</div>
-</div>
-</div><!-- 文章预览 -->
-<div
-    class="mdui-ripple mdui-card card-margin wen-circle card-center"
-    onclick="document.location.replace('./记 MultiType List 的坑/index.html')">
-    <div class="mdui-card-media">
-        <img
-            src="./记 MultiType List 的坑/card.png"
-            onerror="if(!this.retryed){this.src='https://api.maho.cc/random-img/pc.php';this.retryed=true;}else{this.alt='无法加载图片'}" />
-    </div>
-    <div class="mdui-card-primary">
-        <div
-            class="mdui-text-color-theme"
-            style="font-size: 130%;">记 MultiType List 的坑</div>
-    </div>
-    <div class="mdui-card-content">
-
-当 List indexOf 出毛病的时候</div>
-</div>
-</div>
-        <div>
-                <div
-                    class="mdui-text-color-theme"
-                    style="font-size:110%;text-align:center;">HiSuzume💮<a class="mdui-text-color-theme" href="https://icp.gov.moe/?keyword=20233110" target="_blank">萌ICP备20233110号</a></div>
-            </div>
-            <!-- MDUI JavaScript -->
-            <script src="../../static/mdui.min.js">
-            </script>
         </div>
+        <!-- 主要内容 -->
+        <img
+            src="card.png"
+            onerror="this.src='https://api.maho.cc/random-img/pc.php'"
+            width="100%"
+            height="10%"
+            alt="本章节的封面图"
+            style="box-sizing:border-box;"
+            class="mdui-center cover" />
+        <!-- margin: 上 右 下 左 -->
+        <div
+            id="md_pre"
+            style="display:none;">
+%23%23%23 Hello%2Cworld.%0A%0AHello%21 This is your first post in HiSuzume%27s blog.%0A%0A%E5%88%AB%E7%9C%8B%E4%BA%86%EF%BC%8C%E5%8D%A0%E4%BD%8D%E7%9A%84
+        </div>
+        <div
+            id="md"
+            class="mdui-typo"
+            style="font-size:115%;margin: 10% 10% 10% 10%">
+        </div>
+        <div>
+            <div
+                class="mdui-text-color-theme"
+                style="font-size:110%;text-align:center;">HiSuzume💮<a class="mdui-text-color-theme" href="https://icp.gov.moe/?keyword=20233110" target="_blank">萌ICP备20233110号</a></div>
+        </div>
+        <script src="../../../static/showdown.js">
+        </script>
+        <script>
+/*配置MD解析选项*/
+showdown.setOption('customizedHeaderId',true);
+showdown.setOption('tables',true);
+showdown.setOption('strikethrough',true);
+showdown.setOption('tasklists',true);
+showdown.setOption('underline',true);
+showdown.setOption('backslashEscapesHTMLTags',true);
+showdown.setOption('ghCodeBlocks',true);
+/*获取元素*/
+var mdc = document.getElementById("md");
+var mdp = document.getElementById("md_pre");
+/*解析*/
+var converter = new showdown.Converter(),
+    text = decodeURIComponent(mdp.textContent) + "",
+    html = converter.makeHtml(text);
+/*显示*/
+mdc.innerHTML = html;
+/*定义对话框*/
+alert = function(c) {
+    mdui.dialog({
+        title: '提示',
+        content: c + '',
+        buttons: [{
+            text: '确定'
+        }]
+    });
+}
+play = function(url) {
+    new Audio(url).play()
+}
+as = document.getElementById("md").getElementsByTagName("a")
+for (var i=0;i < as.length;i++) {
+    as[i].classList.add("mdui-text-color-theme")
+}
+        </script>
+        <!-- MDUI JavaScript -->
+        <script src="../../../static/mdui.min.js">
+        </script>
     </body>
 </html>
