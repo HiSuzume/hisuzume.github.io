@@ -238,7 +238,14 @@ for (var i=0;i < as.length;i++) {
                 </script>
                 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js">
                 </script>
+                <!-- crypto-js -->
+                <script src="../../../static/crypto-js.min.js">
+                </script>
                 <script>
+function sha256(text) {
+    return CryptoJS.SHA256(text.toString())
+        .toString()
+}
 // 配置 Github 评论
 let gitalk = new Gitalk({
   clientID: '48fde082bef96b75a347',
@@ -246,7 +253,7 @@ let gitalk = new Gitalk({
   repo: 'hisuzume-github-io-comment',
   owner: 'HiSuzume',
   admin: ['HiSuzume'],
-  id: location.pathname.substr(0, 50),
+  id: sha256(location.href),
   distractionFreeMode: false,
 })
 gitalk.render('gitalk-render')
