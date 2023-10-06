@@ -38,6 +38,9 @@ Hello! This is your first post in HiSuzume's blog." />
         <link
             rel="stylesheet"
             href="../../../style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" />
         <!-- MDUI 标题栏 -->
         <div class="mdui-appbar mdui-appbar-fixed">
             <div class="mdui-toolbar mdui-color-theme">
@@ -181,10 +184,16 @@ Hello! This is your first post in HiSuzume's blog." />
             class="mdui-typo"
             style="font-size:115%;margin: 10% 10% 10% 10%">
         </div>
+        <div id="gitalk-render">
+        </div>
         <div>
             <div
                 class="mdui-text-color-theme"
-                style="font-size:110%;text-align:center;">HiSuzume💮<a class="mdui-text-color-theme" href="https://icp.gov.moe/?keyword=20233110" target="_blank">萌ICP备20233110号</a></div>
+                style="font-size:110%;text-align:center;">HiSuzume💮<a
+                    class="mdui-text-color-theme"
+                    href="https://icp.gov.moe/?keyword=20233110"
+                    target="_blank">萌ICP备20233110号</a>
+            </div>
         </div>
         <script src="../../../static/showdown.js">
         </script>
@@ -224,8 +233,23 @@ for (var i=0;i < as.length;i++) {
     as[i].classList.add("mdui-text-color-theme")
 }
         </script>
-        <!-- MDUI JavaScript -->
-        <script src="../../../static/mdui.min.js">
-        </script>
-    </body>
-</html>
+                <!-- MDUI JavaScript -->
+                <script src="../../../static/mdui.min.js">
+                </script>
+                <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js">
+                </script>
+                <script>
+// 配置 Github 评论
+let gitalk = new Gitalk({
+  clientID: '48fde082bef96b75a347',
+  clientSecret: '8ca794f3bacc73be35f52822fb8b45b5b5cff7a7',
+  repo: 'hisuzume-github-io-comment',
+  owner: 'HiSuzume',
+  admin: ['HiSuzume'],
+  id: location.pathname.substr(0, 50),
+  distractionFreeMode: false,
+})
+gitalk.render('gitalk-render')
+    </script>
+            </body>
+        </html>
