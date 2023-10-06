@@ -184,7 +184,9 @@
             class="mdui-typo"
             style="font-size:115%;margin: 10% 10% 10% 10%">
         </div>
-        <div id="gitalk-render">
+        <div
+            id="gitalk-render"
+            style="margin: 10% 10% 10% 10%">
         </div>
         <div>
             <div
@@ -253,7 +255,7 @@ let gitalk = new Gitalk({
   repo: 'hisuzume-github-io-comment',
   owner: 'HiSuzume',
   admin: ['HiSuzume'],
-  id: sha256(location.href),
+  id: sha256(`QQ因机器人被限制登录事件`),
   distractionFreeMode: false,
 })
 gitalk.render('gitalk-render')
